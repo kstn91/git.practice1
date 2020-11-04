@@ -7,14 +7,71 @@ html {
 }
 
 body {
-    margin: 50px;
+    margin: auto;
 }
 
 body header h1 {
+    margin-top: 2rem;
     font-size: 3.125rem;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 1rem 1rem;
 }
 
-body header a p {
+.weblink {
     font-size: 1rem;
     color: aquamarine;
+}
+
+main h1 {
+    font-weight: 300;
+    color: white;
+    font-size: 2.625rem;
+}
+
+main p {
+    font-size: 1.3125rem;
+    color: grey;
+}
+
+main img {
+    display: inline-block;
+    margin: 0.625rem;
+}
+
+.camp {
+    background-image: url("../images/camp.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 527px;
+    width: 896px;
+    margin: 1.5rem auto;
+}
+
+.camp h1 {
+    margin: 0 auto;
+    padding-top: 22rem;
+    padding-right: 35rem;
+    font-size: 1.3125rem;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.phone {
+    display: block;
+    margin: 1.5rem auto;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+footer p {
+    text-align: right;
+    margin: 1.5rem;
+    color: gray;
 }
