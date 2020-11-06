@@ -54,39 +54,39 @@ nav span {
 
 /* MAIN SECTION */
 
-.flex-container-sa {
-    display: flex;
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     background-color: rgb(112, 128, 144);
     width: 100%;
     padding-top: 64px;
-
 }
 
-.flex-container .logo-start {
-    width: 60%;
+.logo-start-g {
+    grid-area: 1 / 1 / 11 / 7;
+    width: 100%;
 }
 
-.flex-container-sa .logo-start img {
-    display: inline-block;
-    margin: 32px 24px;
+.logo-start-t {
+    grid-area: 1 / 7 / 11 / 11;
+    display: flex;
+    align-items: center;
 }
 
-.flex-container-sa .text-start {
-    width: 40%;
-    display: inline-block;
-    text-align: left;
-    padding-top: 200px;
-    margin-right: 10%;
+.logo-start img {
+    width: 100%;
+    padding: 32px 24px;
 }
 
-.flex-container-sa .text-start h1 {
+.text-start h1 {
     color: black;
     font-size: 60px;
     opacity: 0.7;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.flex-container-sa .text-start p {
+.text-start p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     font-size: 40px;
@@ -95,6 +95,7 @@ nav span {
 }
 
 #button {
+    width: 80%;
     font-size: 30px;
     color: white;
     background-color: black;
