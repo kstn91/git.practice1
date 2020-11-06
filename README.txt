@@ -1,1 +1,1 @@
-This is my first project using Git and GitHub
+This is my final codecademy project in web dev path
