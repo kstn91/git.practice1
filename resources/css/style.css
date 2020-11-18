@@ -9,7 +9,6 @@ html {
 body {
   background-color: #99c0d680;
   margin: 0px 0px;
-  height: 1000rem;
 }
 
 #myBtn {
@@ -127,7 +126,7 @@ nav p:hover {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .socials {
     display: none;
   }
@@ -180,24 +179,24 @@ main {
   flex-direction: column;
   width: 100%;
   height: 57.25rem;
-  background-color: #dfe9ee80;
-  background-image: url("../images/glencarrig.webp");
+  background-color: #dfe9ee83;
+  background-image: url("../images/glencarrig.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .welcome h1 {
-  width: 45%;
+  width: 50%;
   text-align: center;
-  font-family: "Lobster", cursive;
+  font-family: 'Dancing Script', cursive;
   color: rgb(0, 0, 0);
   margin: 0px 0px;
   font-size: 3rem;
+  border-radius: 3rem;
   align-self: center;
   background-color: #dfe9ee80;
   padding: 1rem 0 1rem 0;
-  border-radius: 3rem;
 }
 
 .buttons {
@@ -251,7 +250,7 @@ main {
   -webkit-text-stroke: 1px black;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .welcome {
     width: 100%;
     height: 48rem;
@@ -261,6 +260,8 @@ main {
   .welcome h1 {
     width: 100%;
     font-size: 2rem;
+    border-radius: 0rem;
+    font-family: "Lobster", cursive;
   }
 
   .buttons {
@@ -296,15 +297,13 @@ main {
 }
 
 .header-about-us {
-  width: 85%;
+  width: 100%;
   text-align: center;
-  font-family: "Lobster", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 4rem;
   color: rgb(0, 0, 0);
   margin: 0 auto;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  border: 1px solid black;
-  border-radius: 3rem;
   background-color: #dfe9ee;
 }
 
@@ -364,7 +363,7 @@ main {
 .about-us-text2 {
   display: flex;
   width: 50%;
-  text-align: right;
+  text-align: center;
   margin-left: 10rem;
   background-color: #dfe9ee;
   border-radius: 3rem;
@@ -376,7 +375,7 @@ main {
   width: 100%;
   color: black;
   font-family: "Lato", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .about-us-pics-row {
@@ -391,10 +390,10 @@ main {
   padding: 0rem 0.5rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   #about-us {
     width: 100%;
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
 
   .header-about-us {
@@ -421,7 +420,7 @@ main {
     margin-top: 0.5rem;
     width: 100%;
     height: auto;
-    border-radius: 3rem;
+    border-radius: 0rem;
     padding: 0rem 0rem;
   }
 
@@ -435,7 +434,7 @@ main {
     margin: 3rem auto;
     background-color: #dfe9ee;
     border-radius: 3rem;
-    padding: 0rem 0rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -457,15 +456,13 @@ main {
 }
 
 .find-us-header {
-  width: 85%;
+  width: 100%;
   text-align: center;
-  font-family: "Lobster", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 4rem;
   color: rgb(0, 0, 0);
   margin: 0 auto;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  border: 1px solid black;
-  border-radius: 3rem;
   background-color: #dfe9ee;
 }
 
@@ -497,7 +494,7 @@ main {
   padding: 1rem 1rem;
   color: black;
   font-family: "Lato", sans-serif;
-  font-size: 1.36rem;
+  font-size: 1.2rem;
 }
 
 .find-us-img {
@@ -509,7 +506,7 @@ main {
   border-radius: 3rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   #find-us {
     width: 100%;
     padding-top: 2rem;
@@ -559,28 +556,26 @@ main {
 }
 
 .accom-fac-header {
-  width: 85%;
+  width: 100%;
   text-align: center;
-  font-family: "Lobster", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 4rem;
   color: rgb(0, 0, 0);
   margin: 0 auto;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  border: 1px solid black;
-  border-radius: 3rem;
   background-color: #dfe9ee;
 }
 
 .accom-fac-imgs {
   margin: 0px auto;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 .accom-fac-imgs img {
   margin-top: 4rem;
-  width: 2%;
-  height: auto;
+  width: 21%;
+  padding: 0rem 0.5rem;
   border-radius: 3rem;
 }
 
@@ -596,7 +591,7 @@ main {
   width: 80%;
   color: black;
   font-family: "Lato", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background-color: #dfe9ee;
   border-radius: 3rem;
   padding: 1rem 1rem;
@@ -640,23 +635,33 @@ main {
   height: 0.9rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .accom-fac-header {
     font-size: 3rem;
   }
 
-  .accom-fac-list-ul ul {
+  .accom-fac-text {
+    margin-top: 0rem;
+  }
+  
+  .accom-fac-text p {
     width: 90%;
-    font-family: "Lato", sans-serif;
-    font-size: 1rem;
-    text-align: left;
-    list-style: none;
     margin: 0 auto;
-    padding: 0rem 0rem;
+  }
+
+  .accom-fac-list-ul h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Lobster", cursive;
+    margin: 0rem 0rem 1rem 0rem;
+    border-radius: 0rem;
+    padding: 1rem 1rem;
+    background-color: #dfe9ee;
   }
 
   .accom-fac-imgs {
-    margin: 0px auto;
+    margin: 2rem auto;
     width: 100%;
   }
 
@@ -664,5 +669,22 @@ main {
     margin-top: 0.5rem;
     width: 100%;
     border-radius: 0rem;
+    padding: 0rem 0rem;
+  }
+
+  .accom-fac-list {
+    display: block;
+  }
+
+  .accom-fac-list-ul {
+    width: 100%;
+  }
+
+  .accom-fac-list-ul ul {
+    width: 90%;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 0rem 6.5rem;
   }
 }
