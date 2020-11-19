@@ -8,7 +8,7 @@ html {
 
 body {
   background-color: #99c0d680;
-  margin: 0px 0px;
+  margin: 0rem 0rem;
 }
 
 #myBtn {
@@ -149,6 +149,12 @@ nav p:hover {
     display: none;
   }
 
+  .location-s {
+    display: none;
+  }
+
+
+
   nav p:hover {
     color: black;
     font-size: 1rem;
@@ -189,7 +195,7 @@ main {
 .welcome h1 {
   width: 50%;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: rgb(0, 0, 0);
   margin: 0px 0px;
   font-size: 3rem;
@@ -299,7 +305,7 @@ main {
 .header-about-us {
   width: 100%;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 4rem;
   color: rgb(0, 0, 0);
   margin: 0 auto;
@@ -458,7 +464,7 @@ main {
 .find-us-header {
   width: 100%;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 4rem;
   color: rgb(0, 0, 0);
   margin: 0 auto;
@@ -512,6 +518,12 @@ main {
     padding-top: 2rem;
   }
 
+  #g-maps {
+    padding-top: 4rem;
+    width: 100%;
+    height: 50.5rem;
+  }
+
   .find-us-content {
     width: 100%;
     margin: 0 auto;
@@ -558,7 +570,7 @@ main {
 .accom-fac-header {
   width: 100%;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 4rem;
   color: rgb(0, 0, 0);
   margin: 0 auto;
@@ -643,7 +655,7 @@ main {
   .accom-fac-text {
     margin-top: 0rem;
   }
-  
+
   .accom-fac-text p {
     width: 90%;
     margin: 0 auto;
@@ -686,5 +698,216 @@ main {
     font-size: 1rem;
     margin: 0rem 0rem 1rem 0rem;
     padding: 0rem 0rem 0rem 6.5rem;
+  }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Things To Do Section */
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#things-to-do {
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.things-to-do-header {
+  width: 100%;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  background-color: #dfe9ee;
+}
+
+.things-to-do-content {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.fishing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fishing-text {
+  width: 40%;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  background-color: #dfe9ee;
+  border-radius: 3rem;
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.p-hl {
+  font-size: 2.4rem;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+
+.fishing-img {
+  width: 40%;
+  border-radius: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .fishing {
+    display: block;
+  }
+
+  .fishing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fishing-img {
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 0rem;
+  }
+}
+
+.sightseeing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.sightseeing-img {
+  width: 40%;
+  margin: 0rem 0rem;
+}
+
+.sightseeing-img img {
+  width: 100%;
+  border-radius: 3rem;
+}
+
+.sightseeing-img-mobile {
+  display: none;
+}
+
+.sightseeing-text {
+  width: 40%;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  background-color: #dfe9ee;
+  border-radius: 3rem;
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.sightseeing-text ul {
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  margin: 0rem 0rem;
+  padding: 0rem 0rem;
+}
+
+.sightseeing-text ul a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  padding: 0rem 0rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .sightseeing {
+    display: block;
+  }
+
+  .sightseeing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sightseeing-img {
+    display: none;
+  }
+
+  .sightseeing-img-mobile {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+  }
+
+  .sightseeing-img-mobile img {
+    width: 100%;
+  }
+}
+
+.dolphin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.dolphin-text {
+  width: 40%;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  background-color: #dfe9ee;
+  border-radius: 3rem;
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.dolphin-img {
+  width: 40%;
+  margin: 0rem 0rem;
+}
+
+.dolphin-img img {
+  width: 100%;
+  border-radius: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .dolphin {
+    display: block;
+  }
+
+  .dolphin-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .dolphin-img {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .dolphin-img img {
+    width: 100%;
+    border-radius: 0rem;
   }
 }
