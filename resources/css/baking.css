@@ -35,11 +35,11 @@ h1 {
   font-weight: 700;
   font-size: 5rem;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   width: 100%;
   background-color: rgba(128, 128, 128, 0.274);
   padding: 1rem 0rem;
-  margin: 8rem 0rem;
+  margin: 10rem 0rem;
 }
 
 h2 {
@@ -117,8 +117,8 @@ footer a {
 }
 
 footer img {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   margin-bottom: 0.2rem;
 }
 
@@ -169,7 +169,7 @@ footer img {
   display: none;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1500px) {
+@media only screen and (min-width: 0px) and (max-width: 1500px) and (orientation: portrait) {
   .img {
     display: none;
   }
@@ -180,6 +180,98 @@ footer img {
 
   h1 {
     margin: 18rem 0rem;
+  }
+
+  h2 {
+    margin: 2rem 2rem;
+  }
+
+  .mobile-img {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+  }
+
+  .img-mobile {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .img-mobile img {
+    width: 30%;
+    border-radius: 3rem;
+    margin: 0rem 0.5rem;
+  }
+
+  .img-mobile-f {
+    margin: 2rem auto;
+    display: block;
+    width: 100%;
+  }
+
+  .img-mobile-f img {
+    width: 100%;
+  }
+
+  footer {
+    border: none;
+    margin-top: 2rem;
+    padding: 0rem 0rem;
+  }
+
+  .footer-content {
+    display: block;
+    text-align: center;
+  }
+
+  .adress {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .email {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .phone {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .insta {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .facebook {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .bottom-footer {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1500px) and (orientation: landscape) {
+  .img {
+    display: none;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 5rem 0rem;
   }
 
   h2 {

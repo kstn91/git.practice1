@@ -209,7 +209,6 @@ nav p:hover {
   }
   nav {
     width: 100%;
-    height: auto;
     justify-content: space-around;
     padding: 0rem 0rem;
   }
@@ -224,25 +223,34 @@ nav p:hover {
     display: none;
   }
 
-  header {
-    height: 2.5rem;
-    padding: 0rem 0rem;
+  .location-s {
+    display: none;
   }
 
   nav {
+    justify-content: space-between;
     width: 100%;
     font-size: 0.9rem;
     margin: 0 auto;
-    padding: 0.5rem 0.5rem;
-    justify-content: space-between;
+    padding: 0rem 0rem;
   }
 
   .book-s {
-    color: rgb(191, 0, 0);
-    font-size: 1.2rem;
+    color: red;
   }
 
-  .covid-s {
+  nav p:hover {
+    font-size: 0.9rem;
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+  .socials {
+    display: none;
+  }
+
+  .glencarrig-logo {
     display: none;
   }
 
@@ -250,86 +258,21 @@ nav p:hover {
     display: none;
   }
 
-  nav p:hover {
-    color: black;
-    font-size: 1rem;
-  }
-}
-
-/* IPAD PRO SCREEN PORTRAIT */
-
-@media only screen and (width: 1024px) and (height: 1366px) and (orientation: portrait) {
-  .glencarrig-logo {
-    display: none;
-  }
-
   nav {
-    width: 60%;
-  }
-
-  .book-s {
-    color: rgb(191, 0, 0);
-    font-size: 1.5rem;
-  }
-}
-
-/* IPAD PRO SCREEN LANDSCAPE */
-
-@media only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-
-  nav {
-    width: 60%;
-  }
-
-  nav p {
-    font-size: 2rem;
-  }
-
-  .book-s {
-    color: rgb(191, 0, 0);
-    font-size: 2.5rem;
-  }
-}
-
-/* IPAD SCREEN PORTRAIT */
-
-@media only screen and (width: 768px) and (height: 1024px) and (orientation: portrait) {
-
-  .glencarrig-logo {
-    display: none;
-  }
-
-  nav {
-    width: 70%;
-  }
-
-  .book-s {
-    color: rgb(191, 0, 0);
-    font-size: 1.5rem;
-  }
-}
-
-/* IPAD SCREEN LANDSCAPE */
-
-@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape) {
-  nav {
-    width: 70%;
-  }
-
-  nav p {
-    font-size: 1.5rem;
-  }
-
-  .book-s {
-    color: rgb(191, 0, 0);
-    font-size: 2rem;
-  }
-
-  .socials {
-    margin: 0rem 0rem 0rem 1rem;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 0 auto;
     padding: 0rem 0rem;
-    display: flex;
-    justify-content: center;
+  }
+
+  .book-s {
+    color: red;
+  }
+
+  nav p:hover {
+    font-size: 0.8rem;
+    color: black;
   }
 }
 
@@ -356,8 +299,8 @@ main {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 57.25rem;
-  background-color: #dfe9ee83;
+  height: 60rem;
+  background-color: #dfe9ee4d;
   background-image: url("../images/glencarrig.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -365,15 +308,16 @@ main {
 }
 
 .welcome h1 {
-  width: 50%;
+  width: 100%;
+  width: 45%;
+  border-radius: 2rem;
+  margin: 0rem 0rem;
   text-align: center;
-  font-family: "Dancing Script", cursive;
+  font-family: "Lobster", cursive;
   color: rgb(0, 0, 0);
-  margin: 0px 0px;
   font-size: 3rem;
-  border-radius: 3rem;
   align-self: center;
-  background-color: #dfe9ee80;
+  background-color: #ffffff80;
   padding: 1rem 0 1rem 0;
 }
 
@@ -393,8 +337,8 @@ main {
   margin: 10px 10px;
   width: 15rem;
   height: 4rem;
-  background-color: rgba(255, 255, 255, 0.412);
-  border-radius: 15px;
+  background-color: #ffffff80;
+  border-radius: 2rem;
 }
 
 .buttons .button-book:hover {
@@ -411,8 +355,8 @@ main {
   margin: 10px 10px;
   width: 15rem;
   height: 4rem;
-  background-color: rgba(255, 255, 255, 0.412);
-  border-radius: 15px;
+  background-color: #ffffff80;
+  border-radius: 2rem;
 }
 
 .buttons .button-about:hover {
@@ -428,154 +372,10 @@ main {
   -webkit-text-stroke: 1px black;
 }
 
-/* IPAD PRO SCREEN PORTRAIT */
-
-@media only screen and (width: 1024px) and (height: 1366px) and (orientation: portrait) {
-  main {
-    padding-top: 4rem;
-  }
-
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
   .welcome {
     width: 100%;
-    height: 82rem;
-    align-items: center;
-  }
-
-  .welcome h1 {
-    width: 100%;
-    font-size: 2rem;
-    border-radius: 0rem;
-    font-family: "Lobster", cursive;
-  }
-
-  .buttons {
-    width: 100%;
-  }
-
-  .buttons .button-book:hover {
-    transition: none;
-    font-size: 1rem;
-  }
-
-  .buttons .button-about:hover {
-    transition: none;
-    font-size: 1rem;
-  }
-}
-
-/* IPAD PRO SCREEN LANDSCAPE */
-
-@media only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  main {
-    padding-top: 4rem;
-  }
-
-  .welcome {
-    width: 100%;
-    height: 60rem;
-    align-items: center;
-  }
-
-  .welcome h1 {
-    width: 100%;
-    font-size: 2rem;
-    border-radius: 0rem;
-    font-family: "Lobster", cursive;
-  }
-
-  .buttons {
-    width: 100%;
-  }
-
-  .buttons .button-book:hover {
-    transition: none;
-    font-size: 1rem;
-  }
-
-  .buttons .button-about:hover {
-    transition: none;
-    font-size: 1rem;
-  }
-}
-
-/* IPAD SCREEN PORTRAIT */
-
-@media only screen and (width: 768px) and (height: 1024px) and (orientation: portrait) {
-  main {
-    padding-top: 4rem;
-  }
-
-  .welcome {
-    width: 100%;
-    height: 60rem;
-    align-items: center;
-  }
-
-  .welcome h1 {
-    width: 100%;
-    font-size: 2rem;
-    border-radius: 0rem;
-    font-family: "Lobster", cursive;
-  }
-
-  .buttons {
-    width: 100%;
-  }
-
-  .buttons .button-book:hover {
-    transition: none;
-    font-size: 1rem;
-  }
-
-  .buttons .button-about:hover {
-    transition: none;
-    font-size: 1rem;
-  }
-}
-
-/* IPAD SCREEN LANDSCAPE */
-
-@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape) {
-  main {
-    padding-top: 4rem;
-  }
-
-  .welcome {
-    width: 100%;
-    height: 44rem;
-    align-items: center;
-  }
-
-  .welcome h1 {
-    width: 100%;
-    font-size: 2rem;
-    border-radius: 0rem;
-    font-family: "Lobster", cursive;
-  }
-
-  .buttons {
-    width: 100%;
-  }
-
-  .buttons .button-book:hover {
-    transition: none;
-    font-size: 1rem;
-  }
-
-  .buttons .button-about:hover {
-    transition: none;
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
-  main {
-    padding-top: 2.5rem;
-  }
-
-  .welcome {
-    width: 100%;
-    height: 45rem;
+    height: 40rem;
     align-items: center;
   }
 
@@ -601,14 +401,10 @@ main {
   }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 812px) and (orientation: landscape) {
-  main {
-    padding-top: 2.5rem;
-  }
-
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .welcome {
     width: 100%;
-    height: 20rem;
+    height: 40rem;
     align-items: center;
   }
 
@@ -632,7 +428,105 @@ main {
     transition: none;
     font-size: 1rem;
   }
+}
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  main {
+    padding-top: 4rem;
+  }
+
+  .welcome {
+    width: 100%;
+    height: 40rem;
+    align-items: center;
+  }
+
+  .welcome h1 {
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 0rem;
+    font-family: "Lobster", cursive;
+  }
+
+  .buttons {
+    width: 95%;
+  }
+
+  .buttons .button-book:hover {
+    transition: none;
+    font-size: 1rem;
+  }
+
+  .buttons .button-about:hover {
+    transition: none;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  main {
+    padding-top: 4rem;
+  }
+
+  .welcome {
+    width: 100%;
+    height: 40rem;
+    align-items: center;
+  }
+
+  .welcome h1 {
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 0rem;
+    font-family: "Lobster", cursive;
+  }
+
+  .buttons {
+    width: 95%;
+  }
+
+  .buttons .button-book:hover {
+    transition: none;
+    font-size: 1rem;
+  }
+
+  .buttons .button-about:hover {
+    transition: none;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+  main {
+    padding-top: 4rem;
+  }
+
+  .welcome {
+    width: 100%;
+    height: 40rem;
+    align-items: center;
+  }
+
+  .welcome h1 {
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 0rem;
+    font-family: "Lobster", cursive;
+  }
+
+  .buttons {
+    width: 95%;
+  }
+
+  .buttons .button-book:hover {
+    transition: none;
+    font-size: 1rem;
+  }
+
+  .buttons .button-about:hover {
+    transition: none;
+    font-size: 1rem;
+  }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -747,12 +641,133 @@ main {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  .about-us-text {
+    width: 90%;
+    margin: 2.5rem auto;
+    text-align: center;
+  }
+
+  .about-us-pic1 {
+    display: none;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us-pics-row {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    margin: 0rem 0rem;
+  }
+
+  .about-us-pics-row img {
+    margin: 0rem 0rem;
+    padding: 1rem 1rem;
+    width: 45%;
+  }
+
+  .about-us-pic2 {
+    display: none;
+  }
+
+  .about-us-text2 {
+    margin: 2rem 0rem 0rem 0rem;
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-us-text {
+    width: 90%;
+    margin: 2.5rem auto;
+    text-align: center;
+  }
+
+  .about-us-pic1 {
+    display: none;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us-pics-row {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    margin: 0rem 0rem;
+  }
+
+  .about-us-pics-row img {
+    margin: 0rem 0rem;
+    padding: 1rem 1rem;
+    width: 45%;
+  }
+
+  .about-us-pic2 {
+    display: none;
+  }
+
+  .about-us-text2 {
+    margin: 2rem 0rem 0rem 0rem;
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .flex-container {
+    justify-content: space-between;
+  }
+
+  #about-us {
+    width: 100%;
+    padding-top: 4rem;
+  }
+
+  .header-about-us {
+    font-size: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 0rem;
+    border: none;
+    border-radius: 0rem;
+    background-color: #dfe9ee;
+  }
+
+  .about-us-pic1 {
+    display: none;
+  }
+
+  .about-us-text {
+    width: 90%;
+    margin: 2.5rem auto;
+    text-align: center;
+  }
+
+  .about-us-pics-row img {
+    margin-top: 0rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0rem;
+    padding: 0rem 0rem;
+  }
+
+  .about-us-pic2 {
+    display: none;
+  }
+
+  .about-us-text2 {
+    width: 90%;
+    text-align: center;
+    margin: 2.5rem auto;
+    background-color: #dfe9ee;
+    border-radius: 3rem;
+    padding: 1rem 1rem;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
@@ -762,7 +777,59 @@ main {
 
   #about-us {
     width: 100%;
-    padding-top: 2.5rem;
+    padding-top: 4rem;
+  }
+
+  .header-about-us {
+    font-size: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 0rem;
+    border: none;
+    border-radius: 0rem;
+    background-color: #dfe9ee;
+  }
+
+  .about-us-pic1 {
+    display: none;
+  }
+
+  .about-us-text {
+    width: 90%;
+    margin: 2.5rem auto;
+    text-align: center;
+  }
+
+  .about-us-pics-row img {
+    margin-top: 0rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0rem;
+    padding: 0rem 0rem;
+  }
+
+  .about-us-pic2 {
+    display: none;
+  }
+
+  .about-us-text2 {
+    width: 90%;
+    text-align: center;
+    margin: 2.5rem auto;
+    background-color: #dfe9ee;
+    border-radius: 3rem;
+    padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+  .flex-container {
+    justify-content: space-between;
+  }
+
+  #about-us {
+    width: 100%;
+    padding-top: 4rem;
   }
 
   .header-about-us {
@@ -876,15 +943,134 @@ main {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  .find-us-content {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .find-us-img {
+    display: none;
+  }
+
+  .find-us-text {
+    width: 90%;
+    text-align: center;
+    margin: 3rem 0rem 0rem 0rem;
+    padding: 1rem 1rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .find-us-content {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .find-us-img {
+    display: none;
+  }
+
+  .find-us-text {
+    width: 90%;
+    text-align: center;
+    margin: 3rem 0rem 0rem 0rem;
+    padding: 1rem 1rem;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  #find-us {
+    width: 100%;
+    padding-top: 0rem;
+  }
+
+  #g-maps {
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    width: 100%;
+    height: 30rem;
+  }
+
+  .find-us-content {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .find-us-img {
+    display: none;
+  }
+
+  .find-us-text {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0rem 0rem;
+  }
+
+  .find-us-text p {
+    padding: 1rem 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .find-us-header {
+    width: 100%;
+    font-size: 3rem;
+    border-radius: 0rem;
+    background-color: #dfe9ee;
+    border: none;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  #find-us {
+    width: 100%;
+    padding-top: 0rem;
+  }
+
+  #g-maps {
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    width: 100%;
+    height: 30rem;
+  }
+
+  .find-us-content {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .find-us-img {
+    display: none;
+  }
+
+  .find-us-text {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0rem 0rem;
+  }
+
+  .find-us-text p {
+    padding: 1rem 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .find-us-header {
+    width: 100%;
+    font-size: 3rem;
+    border-radius: 0rem;
+    background-color: #dfe9ee;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px) {
   #find-us {
     width: 100%;
     padding-top: 0rem;
@@ -1027,17 +1213,112 @@ main {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  .accom-fac-imgs {
+    width: 100%;
+    margin: 2rem 0rem;
+  }
+
+  .accom-fac-imgs img {
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    width: 45%;
+  }
+
+  .accom-fac-text {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1rem 1rem;
+  }
+
+  .accom-fac-text p {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    background-color: #dfe9ee;
+    border-radius: 3rem;
+  }
+
+  .accom-fac-list-ul h3 {
+    width: 100%;
+    text-align: center;
+    font-family: "Lobster", cursive;
+    margin: 0rem 0rem 1rem 0rem;
+    border-radius: 0rem;
+    padding: 1rem 1rem;
+    background-color: #dfe9ee;
+  }
+
+  .accom-fac-list {
+    display: block;
+  }
+
+  .accom-fac-list-ul {
+    width: 100%;
+  }
+
+  .accom-fac-list-ul ul {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    padding: 0rem 0rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .accom-fac-imgs {
+    width: 100%;
+    margin: 2rem 0rem;
+  }
+
+  .accom-fac-imgs img {
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    width: 45%;
+  }
+
+  .accom-fac-text {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1rem 1rem;
+  }
+
+  .accom-fac-text p {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    background-color: #dfe9ee;
+    border-radius: 3rem;
+  }
+
+  .accom-fac-list-ul h3 {
+    width: 100%;
+    text-align: center;
+    font-family: "Lobster", cursive;
+    margin: 0rem 0rem 1rem 0rem;
+    border-radius: 0rem;
+    padding: 1rem 1rem;
+    background-color: #dfe9ee;
+  }
+
+  .accom-fac-list {
+    display: block;
+  }
+
+  .accom-fac-list-ul {
+    width: 100%;
+  }
+
+  .accom-fac-list-ul ul {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    padding: 0rem 0rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-}
-
-@media only screen and (min-width: 320px) and (max-width: 479px) {
   #accom-fac {
-    padding-top: 2.5rem;
+    padding-top: 4rem;
   }
   .accom-fac-header {
     font-size: 3rem;
@@ -1087,8 +1368,125 @@ main {
     width: 100%;
     font-family: "Lato", sans-serif;
     font-size: 1rem;
+    text-align: center;
+    padding: 0rem 0rem;
     margin: 0rem 0rem 1rem 0rem;
-    padding: 0rem 0rem 0rem 7.5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #accom-fac {
+    padding-top: 4rem;
+  }
+  .accom-fac-header {
+    font-size: 3rem;
+  }
+
+  .accom-fac-text {
+    margin-top: 0rem;
+  }
+
+  .accom-fac-text p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .accom-fac-list-ul h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Lobster", cursive;
+    margin: 0rem 0rem 1rem 0rem;
+    border-radius: 0rem;
+    padding: 1rem 1rem;
+    background-color: #dfe9ee;
+  }
+
+  .accom-fac-imgs {
+    margin: 2.5rem auto;
+    width: 100%;
+  }
+
+  .accom-fac-imgs img {
+    margin-top: 0rem;
+    width: 100%;
+    border-radius: 0rem;
+    padding: 0rem 0rem;
+  }
+
+  .accom-fac-list {
+    display: block;
+  }
+
+  .accom-fac-list-ul {
+    width: 100%;
+  }
+
+  .accom-fac-list-ul ul {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0rem 0rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+  #accom-fac {
+    padding-top: 4rem;
+  }
+  .accom-fac-header {
+    font-size: 3rem;
+  }
+
+  .accom-fac-text {
+    margin-top: 0rem;
+  }
+
+  .accom-fac-text p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .accom-fac-list-ul h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Lobster", cursive;
+    margin: 0rem 0rem 1rem 0rem;
+    border-radius: 0rem;
+    padding: 1rem 1rem;
+    background-color: #dfe9ee;
+  }
+
+  .accom-fac-imgs {
+    margin: 2.5rem auto;
+    width: 100%;
+  }
+
+  .accom-fac-imgs img {
+    margin-top: 0rem;
+    width: 100%;
+    border-radius: 0rem;
+    padding: 0rem 0rem;
+  }
+
+  .accom-fac-list {
+    display: block;
+  }
+
+  .accom-fac-list-ul {
+    width: 100%;
+  }
+
+  .accom-fac-list-ul ul {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0rem 0rem;
+    margin: 0rem 0rem 1rem 0rem;
   }
 }
 
@@ -1125,17 +1523,6 @@ main {
   width: 100%;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px),
-  (orientation: portrait) {
-  #things-to-do {
-    padding-top: 2.5rem;
-  }
-
-  .things-to-do-header {
-    font-size: 3rem;
-  }
-}
-
 .fishing {
   width: 100%;
   display: flex;
@@ -1164,25 +1551,6 @@ main {
 .fishing-img {
   width: 40%;
   border-radius: 3rem;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px),
-  (orientation: portrait) {
-  .fishing {
-    display: block;
-  }
-
-  .fishing-text {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .fishing-img {
-    margin-top: 2.5rem;
-    width: 100%;
-    border-radius: 0rem;
-  }
 }
 
 .sightseeing {
@@ -1235,34 +1603,6 @@ main {
   padding: 0rem 0rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px),
-  (orientation: portrait) {
-  .sightseeing {
-    display: block;
-    margin-top: 2.5rem;
-  }
-
-  .sightseeing-text {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .sightseeing-img {
-    display: none;
-  }
-
-  .sightseeing-img-mobile {
-    margin-top: 2.5rem;
-    display: block;
-    width: 100%;
-  }
-
-  .sightseeing-img-mobile img {
-    width: 100%;
-  }
-}
-
 .dolphin {
   display: flex;
   justify-content: center;
@@ -1291,30 +1631,6 @@ main {
 .dolphin-img img {
   width: 100%;
   border-radius: 3rem;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px),
-  (orientation: portrait) {
-  .dolphin {
-    display: block;
-    margin-top: 2.5rem;
-  }
-
-  .dolphin-text {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .dolphin-img {
-    margin-top: 2.5rem;
-    width: 100%;
-  }
-
-  .dolphin-img img {
-    width: 100%;
-    border-radius: 0rem;
-  }
 }
 
 .food {
@@ -1351,8 +1667,461 @@ main {
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px),
-  (orientation: portrait) {
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  #things-to-do {
+    padding-top: 4rem;
+  }
+
+  .fishing {
+    display: block;
+  }
+
+  .fishing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fishing-img {
+    margin-top: 2.5rem;
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .sightseeing {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .sightseeing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sightseeing-img {
+    display: none;
+  }
+
+  .sightseeing-img-mobile {
+    margin-top: 2.5rem;
+    display: block;
+    width: 100%;
+  }
+
+  .sightseeing-img-mobile img {
+    width: 100%;
+  }
+
+  .dolphin {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .dolphin-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .dolphin-img {
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .dolphin-img img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .food {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .food-img {
+    display: none;
+  }
+
+  .food-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .food-img-mobile {
+    display: block;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .food-img-mobile img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #things-to-do {
+    padding-top: 4rem;
+  }
+
+  .fishing {
+    display: block;
+  }
+
+  .fishing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fishing-img {
+    margin-top: 2.5rem;
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .sightseeing {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .sightseeing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sightseeing-img {
+    display: none;
+  }
+
+  .sightseeing-img-mobile {
+    margin-top: 2.5rem;
+    display: block;
+    width: 100%;
+  }
+
+  .sightseeing-img-mobile img {
+    width: 100%;
+  }
+
+  .dolphin {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .dolphin-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .dolphin-img {
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .dolphin-img img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .food {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .food-img {
+    display: none;
+  }
+
+  .food-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .food-img-mobile {
+    display: block;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .food-img-mobile img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #things-to-do {
+    padding-top: 4rem;
+  }
+
+  .things-to-do-header {
+    font-size: 3rem;
+  }
+
+  .fishing {
+    display: block;
+  }
+
+  .fishing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fishing-img {
+    margin-top: 2.5rem;
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .sightseeing {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .sightseeing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sightseeing-img {
+    display: none;
+  }
+
+  .sightseeing-img-mobile {
+    margin-top: 2.5rem;
+    display: block;
+    width: 100%;
+  }
+
+  .sightseeing-img-mobile img {
+    width: 100%;
+  }
+
+  .dolphin {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .dolphin-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .dolphin-img {
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .dolphin-img img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .food {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .food-img {
+    display: none;
+  }
+
+  .food-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .food-img-mobile {
+    display: block;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .food-img-mobile img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #things-to-do {
+    padding-top: 4rem;
+  }
+
+  .things-to-do-header {
+    font-size: 3rem;
+  }
+
+  .fishing {
+    display: block;
+  }
+
+  .fishing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fishing-img {
+    margin-top: 2.5rem;
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .sightseeing {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .sightseeing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sightseeing-img {
+    display: none;
+  }
+
+  .sightseeing-img-mobile {
+    margin-top: 2.5rem;
+    display: block;
+    width: 100%;
+  }
+
+  .sightseeing-img-mobile img {
+    width: 100%;
+  }
+
+  .dolphin {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .dolphin-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .dolphin-img {
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .dolphin-img img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .food {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .food-img {
+    display: none;
+  }
+
+  .food-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .food-img-mobile {
+    display: block;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .food-img-mobile img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+  #things-to-do {
+    padding-top: 4rem;
+  }
+
+  .things-to-do-header {
+    font-size: 3rem;
+  }
+
+  .fishing {
+    display: block;
+  }
+
+  .fishing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fishing-img {
+    margin-top: 2.5rem;
+    width: 100%;
+    border-radius: 0rem;
+  }
+
+  .sightseeing {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .sightseeing-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sightseeing-img {
+    display: none;
+  }
+
+  .sightseeing-img-mobile {
+    margin-top: 2.5rem;
+    display: block;
+    width: 100%;
+  }
+
+  .sightseeing-img-mobile img {
+    width: 100%;
+  }
+
+  .dolphin {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .dolphin-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .dolphin-img {
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .dolphin-img img {
+    width: 100%;
+    border-radius: 0rem;
+  }
+
   .food {
     display: block;
     margin-top: 2.5rem;
@@ -1422,8 +2191,100 @@ main {
   padding: 1rem 1rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px),
-  (orientation: portrait) {
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  #reccoms {
+    margin: 2.5rem 0rem;
+  }
+
+  .reccoms-img img {
+    width: 17%;
+  }
+
+  #bb3 {
+    width: 15%;
+    display: block;
+  }
+
+  #mc20 {
+    width: 15%;
+  }
+
+  #waw {
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #reccoms {
+    margin: 2.5rem 0rem;
+  }
+
+  .reccoms-img img {
+    width: 17%;
+  }
+
+  #bb3 {
+    width: 15%;
+    display: block;
+  }
+
+  #mc20 {
+    width: 15%;
+  }
+
+  #waw {
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #reccoms {
+    margin: 2.5rem 0rem;
+  }
+  .reccoms-img {
+    display: block;
+  }
+
+  .reccoms-img img {
+    width: 32%;
+  }
+
+  #bb3 {
+    width: 32%;
+  }
+
+  #mc20 {
+    width: 32%;
+  }
+
+  #waw {
+    padding-bottom: 3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #reccoms {
+    margin: 2.5rem 0rem;
+  }
+  .reccoms-img {
+    display: block;
+  }
+
+  .reccoms-img img {
+    width: 32%;
+  }
+
+  #bb3 {
+    width: 32%;
+  }
+
+  #mc20 {
+    width: 32%;
+  }
+
+  #waw {
+    padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px) {
   #reccoms {
     margin: 2.5rem 0rem;
   }
@@ -1526,8 +2387,177 @@ footer img {
   text-align: center;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px),
-  (orientation: portrait) {
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  footer {
+    margin-top: 2rem;
+    padding: 0rem 0rem;
+  }
+
+  .footer-content {
+    display: block;
+    text-align: center;
+  }
+
+  .adress {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .email {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .phone {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .insta {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .facebook {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    margin-top: 2rem;
+    padding: 0rem 0rem;
+  }
+
+  .footer-content {
+    display: block;
+    text-align: center;
+  }
+
+  .adress {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .email {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .phone {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .insta {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .facebook {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  footer {
+    margin-top: 2rem;
+    padding: 0rem 0rem;
+  }
+
+  .footer-content {
+    display: block;
+    text-align: center;
+  }
+
+  .adress {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .email {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .phone {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .insta {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .facebook {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  footer {
+    margin-top: 2rem;
+    padding: 0rem 0rem;
+  }
+
+  .footer-content {
+    display: block;
+    text-align: center;
+  }
+
+  .adress {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .email {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .phone {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .insta {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+
+  .facebook {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #99c0d680;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px) {
   footer {
     margin-top: 2rem;
     padding: 0rem 0rem;
