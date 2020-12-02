@@ -299,34 +299,34 @@ main {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 60rem;
+  height: 59rem;
   background-color: #dfe9ee4d;
-  background-image: url("../images/glencarrig.jpg");
+  background-image: url("../images/glencarrig_hq_fhd.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .welcome h1 {
-  width: 100%;
   width: 45%;
   border-radius: 2rem;
-  margin: 0rem 0rem;
+  margin: 0rem 0rem 0rem 5rem;
   text-align: center;
   font-family: "Lobster", cursive;
   color: rgb(0, 0, 0);
   font-size: 3rem;
-  align-self: center;
+  align-self: left;
   background-color: #ffffff80;
   padding: 1rem 0 1rem 0;
 }
 
 .buttons {
-  width: 100%;
+  margin: 0rem 0rem 0rem 9rem;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-content: center;
-  font-family: "Lato", sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
 }
 
 .buttons .button-book {
@@ -335,7 +335,7 @@ main {
   align-items: center;
   text-align: center;
   margin: 10px 10px;
-  width: 15rem;
+  width: 20rem;
   height: 4rem;
   background-color: #ffffff80;
   border-radius: 2rem;
@@ -343,7 +343,7 @@ main {
 
 .buttons .button-book:hover {
   background-color: #dfe9ee;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   transition: 0.6s ease;
 }
 
@@ -353,7 +353,7 @@ main {
   align-items: center;
   text-align: center;
   margin: 10px 10px;
-  width: 15rem;
+  width: 20rem;
   height: 4rem;
   background-color: #ffffff80;
   border-radius: 2rem;
@@ -361,7 +361,7 @@ main {
 
 .buttons .button-about:hover {
   background-color: #dfe9ee;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   transition: 0.6s ease;
 }
 
@@ -394,18 +394,19 @@ main {
   .welcome {
     width: 100%;
     height: 40rem;
-    align-items: center;
   }
 
   .welcome h1 {
+    margin: 0rem 0rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-radius: 0rem;
     font-family: "Lobster", cursive;
   }
 
   .buttons {
-    width: 95%;
+    margin: 0 auto;
+    font-size: 1.2rem;
   }
 
   .buttons .button-book:hover {
@@ -421,12 +422,14 @@ main {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .welcome {
+    background-image: url("../images/glencarrig_hq_mobile.jpg");
     width: 100%;
     height: 40rem;
     align-items: center;
   }
 
   .welcome h1 {
+    margin: 0rem 0rem;
     width: 100%;
     font-size: 2rem;
     border-radius: 0rem;
@@ -434,7 +437,8 @@ main {
   }
 
   .buttons {
-    width: 95%;
+    margin: 0 auto;
+    font-size: 1rem;
   }
 
   .buttons .button-book:hover {
@@ -454,12 +458,14 @@ main {
   }
 
   .welcome {
+    background-image: url("../images/glencarrig_hq_mobile.jpg");
     width: 100%;
     height: 40rem;
     align-items: center;
   }
 
   .welcome h1 {
+    margin: 0rem 0rem;
     width: 100%;
     font-size: 2rem;
     border-radius: 0rem;
@@ -468,6 +474,8 @@ main {
 
   .buttons {
     width: 95%;
+    margin: 0 auto;
+    font-size: 1rem;
   }
 
   .buttons .button-book:hover {
@@ -487,12 +495,14 @@ main {
   }
 
   .welcome {
+    background-image: url("../images/glencarrig_hq_mobile.jpg");
     width: 100%;
     height: 40rem;
     align-items: center;
   }
 
   .welcome h1 {
+    margin: 0rem 0rem;
     width: 100%;
     font-size: 2rem;
     border-radius: 0rem;
@@ -501,6 +511,8 @@ main {
 
   .buttons {
     width: 95%;
+    margin: 0 auto;
+    font-size: 1rem;
   }
 
   .buttons .button-book:hover {
@@ -520,12 +532,14 @@ main {
   }
 
   .welcome {
+    background-image: url("../images/glencarrig_hq_mobile.jpg");
     width: 100%;
     height: 40rem;
     align-items: center;
   }
 
   .welcome h1 {
+    margin: 0rem 0rem;
     width: 100%;
     font-size: 2rem;
     border-radius: 0rem;
@@ -534,6 +548,8 @@ main {
 
   .buttons {
     width: 95%;
+    margin: 0 auto;
+    font-size: 1rem;
   }
 
   .buttons .button-book:hover {
