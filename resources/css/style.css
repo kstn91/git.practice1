@@ -111,7 +111,7 @@ nav a:hover {
 
 #book-sp a {
   font-size: 2rem;
-  color: rgb(226, 127, 14);
+  color: rgb(163, 64, 6);
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1599px) {
@@ -216,7 +216,7 @@ nav a:hover {
   }
 
   #book-sp a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
