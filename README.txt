@@ -1,1 +1,0 @@
-Glencarrig project
