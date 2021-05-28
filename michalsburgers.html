@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michal's burgers - Order Grub</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 20px;
+        margin: 0 auto;
+      }
+
+      body {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+      }
+
+      #wrapper {
+        margin: 0 auto;
+        width: 80%;
+        padding: 2rem 0rem;
+        margin-top: 1rem;
+      }
+
+      header {
+        background-color: gray;
+        border-radius: 10rem;
+        padding: 1rem 0rem;
+        margin-top: 1rem;
+      }
+
+      #main {
+        background-color: gray;
+        border-radius: 10rem;
+        padding: 1rem 0rem;
+        margin-top: 1rem;
+      }
+
+      select {
+        width: 30%;
+      }
+
+      #chips {
+        margin-top: 1rem;
+        background-color: black;
+        color: white;
+        padding: 1rem 0rem;
+      }
+
+      footer {
+        background-color: gray;
+        border-radius: 10rem;
+        padding: 1rem 0rem;
+        margin-top: 1rem;
+      }
+
+      #total {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      #total div {
+        width: 33%;
+      }
+
+      footer button {
+        width: 50%;
+        height: 40px;
+        font-size: 20px;
+      }
+
+      #order {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background-color: red;
+        color: white;
+        font-size: 2.6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1 id="logo">Michal's Burgers</h1>
+        <p id="motto">
+          Order Grub, pay € and stuff your face like there's no tomorrow!
+        </p>
+      </header>
+      <main id="main">
+        <div id="burger">
+          <h2>Choose your BURGER:</h2>
+          <select
+            name="burger-choice"
+            id="burgerChoice"
+            onchange="setBurgerPrice()"
+          >
+            <optgroup label="Choose your Burger">
+              <option selected value="no-burger">NO BURGER</option>
+              <option value="plain-burger">Plain Burger</option>
+              <option value="cheese-burger">Cheese Burger</option>
+              <option value="chicken-burger">Chicken Burger</option>
+              <option value="vegan-burger">Vegan Burger</option>
+            </optgroup>
+          </select>
+          <h2>How many?</h2>
+          <select
+            name="burger-quantity"
+            id="burgerQuantity"
+            onchange="setBurgerQuantity()"
+          >
+            <option selected value="burgerQuan0">0</option>
+            <option value="burgerQuan1">1</option>
+            <option value="burgerQuan2">2</option>
+            <option value="burgerQuan3">3</option>
+            <option value="burgerQuan4">4</option>
+            <option value="burgerQuan5">5</option>
+            <option value="burgerQuan6">6(max)</option>
+          </select>
+        </div>
+        <div id="chips">
+          <h2>Choose your CHIPS:</h2>
+          <select
+            name="chips-choice"
+            id="chipsChoice"
+            onchange="setChipsPrice()"
+          >
+            <optgroup label="Choose your Chips">
+              <option selected value="no-chips">NO CHIPS</option>
+              <option value="plain-chips">Plain Chips</option>
+              <option value="cheese-chips">Cheese Chips</option>
+              <option value="taco-chips">Taco Chips</option>
+              <option value="curry-chips">Curry Chips</option>
+            </optgroup>
+          </select>
+          <h2>How many portions?</h2>
+          <select
+            name="chips-quantity"
+            id="chipsQuantity"
+            onchange="setChipsQuantity()"
+          >
+            <option selected value="chipsQuan0">0</option>
+            <option value="chipsQuan1">1</option>
+            <option value="chipsQuan2">2</option>
+            <option value="chipsQuan3">3</option>
+            <option value="chipsQuan4">4</option>
+            <option value="chipsQuan5">5</option>
+            <option value="chipsQuan6">6(max)</option>
+          </select>
+        </div>
+        <div id="soda">
+          <h2>Choose your SODA:</h2>
+          <select name="soda-choice" id="sodaChoice" onchange="setSodaPrice()">
+            <optgroup label="Choose your Soda">
+              <option selected value="no-drink">NO SODA</option>
+              <option value="coke">Coke</option>
+              <option value="fanta">Fanta</option>
+              <option value="sprite">Sprite</option>
+            </optgroup>
+          </select>
+          <h2>How many?</h2>
+          <select
+            name="soda-quantity"
+            id="sodaQuantity"
+            onchange="setSodaQuantity()"
+          >
+            <option selected value="sodaQuan0">0</option>
+            <option value="sodaQuan1">1</option>
+            <option value="sodaQuan2">2</option>
+            <option value="sodaQuan3">3</option>
+            <option value="sodaQuan4">4</option>
+            <option value="sodaQuan5">5</option>
+            <option value="sodaQuan6">6(max)</option>
+          </select>
+        </div>
+      </main>
+      <footer id="footer">
+        <div id="total">
+          <div id="burgertotal">
+            <p>Your burgers total is: <span id="burgerPrice"></span></p>
+          </div>
+          <div id="chipstotal">
+            <p>Your chips total is: <span id="chipsPrice"></span></p>
+          </div>
+          <div id="sodatotal">
+            <p>Your soda total is: <span id="sodaPrice"></span></p>
+          </div>
+        </div>
+        <div id="ordertotal">
+          <button onclick="calculateTotal()">Calculate Total</button>
+          <p>Your Order total is: €<span id="totalPar"></span></p>
+        </div>
+        <a href="resources/image.jpg"><button id="order">ORDER</button></a>
+      </footer>
+      <script src="js/fastfood.js"></script>
+    </div>
+  </body>
+</html>
