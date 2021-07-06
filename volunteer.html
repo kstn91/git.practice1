@@ -135,29 +135,154 @@
         width: 30rem;
       }
 
+      .volunteerFigure {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .volunteerFigure figcaption {
+        width: 40rem;
+        margin: 0 auto;
+        padding: 2rem 4rem;
+        border-radius: 10rem;
+        font-size: 1.3rem;
+        border-bottom: 1rem solid #f5ab0a;
+        border-left: 1rem solid #f5ab0a;
+        border-right: 1rem solid #f5ab0a;
+      }
+
+      .volunteerFigure figcaption a {
+        color: black;
+      }
+
+      .borderBottomPic {
+        border-bottom: 1rem solid #f5ab0a;
+        border-radius: 5rem;
+      }
+
+      .teamPic1 {
+        width: 50rem;
+        padding: 2rem 5rem 0rem 5rem;
+      }
+
+      #volunteerList {
+        font-size: 1.3rem;
+        margin: 0rem 0rem 0rem auto;
+        padding: 0rem;
+        width: 15rem;
+        list-style: upper-roman;
+      }
+
+      #volunteerList li {
+        padding: 0.5rem;
+        text-align: left;
+      }
+
+      .red {
+        color: #dd2712;
+        font-size: 1.35rem;
+        font-weight: 900;
+      }
+
+      #catsVolunteer {
+        width: 50rem;
+        padding: 0rem 1rem;
+        margin: 0rem auto 0rem 0rem;
+      }
+
+      #catDown {
+        width: 20rem;
+        padding: 0rem 0rem 0rem 3rem;
+        margin: 0;
+      }
+
+      #teamPic2 {
+        padding: 0rem 6rem 0rem 0rem;
+        margin: 0;
+      }
+
+      #figTeam2 {
+        width: 35rem;
+        padding-left: 5rem;
+      }
+
+      .endHeading {
+        font-size: 2rem;
+        padding: 0rem 4rem 2rem 4rem;
+        margin: 0 auto;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
       /* MAIN - MEDIA - TABLET */
 
       @media only screen and (max-width: 1300px) {
+        .mainContent figcaption {
+          font-size: 1.5rem;
+        }
 
-        #mainList {
-        width: 50rem;
-      }
+        .volunteerFigure {
+          width: 100%
+        }
 
-      #padding0topBottom {
-        width: 25rem;
-        padding: 4rem 4rem 0rem 0rem;
-      }
+        .volunteerFigure figcaption {
+          font-size: 1.5rem;
+        }
 
-      .cat5 {
-        width: 20rem;
-        padding: 0rem 1rem;
-      }
+        #catsVolunteer {
+          width: 60rem;
+        }
 
-      #padding0left {
-        width: 30rem;
-        padding: 0rem 8rem 0rem 0rem;
-      }
+        #mediaTeam2 {
+          display: block;
+          text-align: center;
+        }
 
+        #fig2 {
+          margin: 0 auto;
+        }
+
+        #volunteerList {
+          font-size: 1.6rem;
+          margin: 0;
+          width: 100%;
+        }
+
+        .red {
+          font-size: 1.7rem;
+        }
+
+        #padding0topBottom {
+          width: 25rem;
+          padding: 4rem 4rem 0rem 0rem;
+        }
+
+        .cat5 {
+          width: 20rem;
+          padding: 0rem 1rem;
+        }
+
+        #padding0left {
+          width: 30rem;
+          padding: 0rem 8rem 0rem 0rem;
+        }
+
+        #margin0top2 {
+          margin-top: 0;
+        }
+
+        .paraBorder {
+          font-size: 1.5rem;
+          width: 100%;
+        }
+
+        .highlightSize {
+          font-size: 1.6rem;
+        }
+
+        #catDown {
+          width: 25rem;
+        }
       }
 
       /* MAIN - MEDIA - PHONE */
@@ -166,6 +291,62 @@
         main {
           margin: 0 auto;
           padding: 0rem;
+        }
+
+        .volunteerFigure {
+          width: 100%
+        }
+
+        .volunteerFigure img {
+          width: 95%
+        }
+
+        .volunteerFigure figcaption {
+          font-size: 2.5rem;
+          width: 80%;
+        }
+
+        .highlightSize {
+          font-size: 2.7rem;
+        }
+
+        .red {
+          font-size: 2.7rem;
+        }
+
+        #catsVolunteer {
+          width: 60rem;
+        }
+
+        #mediaTeam2 {
+          display: block;
+          text-align: center;
+        }
+
+        #fig2 {
+          margin: 0 auto;
+          width: fit-content;
+        }
+
+        #volunteerList {
+          font-size: 2.5rem;
+          margin: 0;
+        }
+
+        #catDown {
+          float: left;
+          padding-left: 2rem;
+        }
+
+        #figTeam2 {
+          width: 100%;
+          padding: 0rem 2rem;
+        }
+
+        #teamPic2 {
+          margin: 0;
+          padding: 0;
+          width: 60rem;
         }
 
         .headingTxt {
@@ -188,17 +369,6 @@
           display: none;
         }
 
-        #mainList {
-          width: 80%;
-          padding: 0rem 0rem;
-          margin: 0 auto;
-          font-size: 2.5rem;
-        }
-
-        #mainList li {
-          padding: 1rem;
-        }
-
         .borderTop {
           border-top: 1rem solid #f5ab0a;
         }
@@ -210,15 +380,7 @@
         .borderFigBottom {
           border-bottom: 1rem solid #f5ab0a;
         }
-
-        .cat5 {
-          width: 45%;
-        }
-
-        .highlightSize {
-          font-size: 2.7rem;
-        }
-
+        
         .paraBorder {
           font-size: 2.5rem;
         }
@@ -234,7 +396,6 @@
           padding: 0;
           margin: 0 auto;
         }
-
       }
 
       /* SLIDER GALLERY CSS */
@@ -404,6 +565,9 @@
       <nav id="mainNav">
         <ul>
           <li>
+            <a href="index.html" target="_blank">About Us</a>
+          </li>
+          <li>
             <a href="contact.html" target="_blank">Contact</a>
           </li>
           <li>
@@ -416,9 +580,6 @@
             <a href="tnr.html" target="_blank">TNR</a>
           </li>
           <li>
-            <a href="volunteer.html" target="_blank">Volunteer</a>
-          </li>
-          <li>
             <a href="thepurr.html" target="_blank">The Purr</a>
           </li>
         </ul>
@@ -427,96 +588,92 @@
     <main>
       <section id="sectionMainOne">
         <article class="artAboutUs">
-          <h1 class="headingTxt" id="marginTop0">A little about us</h1>
-          <figure class="mainContent">
-            <figcaption class="borderFigBottom">
-              Our vision is to help create a world where every cat is
-              <span class="highlightSize">cared for.</span><br />
-              We are a NO KILL cat charity based in Dublin’s north inner
-              city.<br />
-              We opened <span class="highlightSize">The Inner Purr</span>, our
-              flagship cat rescue centre in Smithfield, on Valentine’s Day 2021.
+          <h1 class="headingTxt" id="marginTop0">VOLUNTEER</h1>
+          <figure class="volunteerFigure">
+            <img
+              class="figurePics , borderBottomPic , teamPic1"
+              src="resources/images/team1.png"
+            />
+            <figcaption>
+              Our <span class="highlightSize">volunteers</span> are our
+              <span class="highlightSize">lifeblood</span> – we couldn’t do any
+              of our work without our wonderful volunteer team!!
+            </figcaption>
+          </figure>
+          <h2 class="headingTxt">
+            We are always looking for volunteers to help us with the following:
+          </h2>
+          <figure class="mainContent" id="mediaTeam2">
+            <figcaption id="fig2">
+              <ol id="volunteerList">
+                <li><span class="red">TNR</span> programmes</li>
+                <li><span class="red">Rescue</span> Work</li>
+                <li><span class="red">Transport</span></li>
+                <li><span class="red">Fostering</span></li>
+                <li>Kitty <span class="red">Home Approving</span></li>
+                <li>
+                  <span class="red">Website</span> and
+                  <span class="red">Social Media</span> Platforms
+                </li>
+                <li><span class="red">Fundraising</span></li>
+                <li><span class="red">Events</span></li>
+                <li><span class="red">Admin</span> Work</li>
+                <li><span class="red">The Purr</span></li>
+              </ol>
             </figcaption>
             <img
               class="figurePics"
-              id="padding0left"
-              alt="Picture of the Cat"
-              title="Cat"
-              src="resources/images/pngaaa.com-451125.png"
+              id="catsVolunteer"
+              src="resources/images/catsVolunteer.png"
             />
           </figure>
+
+          <p class="paraBorder" id="margin0top2">
+            Please <span class="highlightSize">reach out</span> to us if you're
+            interested in any of the roles, any help is
+            <span class="highlightSize">greatly appriciated!</span><br />We
+            offer <span class="highlightSize">full training</span> and
+            <span class="highlightSize">support</span> to all our volunteers.
+          </p>
           <figure class="mainContent">
             <img
-              class="figurePics, cat5"
-              id="borderBottom"
-              alt="Picture of the Cat"
-              title="Cat"
-              src="resources/images/pngaaa.com-451132.png"
+              class="figurePics"
+              id="catDown"
+              src="resources/images/catDown.png"
             />
-
-            <figcaption class="borderTop">
-              Our mission is to help homeless, stray and feral cats and kittens
-              through our
-              <span class="highlightSize">Trap-Neuter-Release (TNR)</span>,
-              rescue, fostering and rehoming programmes, in conjunction with our
-              educational and advocacy work.<br />For more information about
-              <span class="highlightSize">TNR</span> click
-              <a href="tnr.html">here.</a>
+            <figcaption>
+              We welcome <span class="highlightSize">diversity</span> and
+              encourage applications from potential volunteers of any age (<span
+                class="highlightSize"
+                >18 years or older</span
+              >), gender, ethnicity, religion, and sexual orientation. Most of
+              our volunteer roles are
+              <span class="highlightSize">suitable</span> for anyone with a
+              <span class="highlightSize">moderate physical disability.</span>
             </figcaption>
           </figure>
-          <h2 class="headingTxt">Our Goals and Objectives are to:</h2>
-          <ol id="mainList">
-            <li>
-              <span class="highlightSize">Manage</span> the homeless cat
-              population in a humane and effective way through our
-              <span class="highlightSize">TNR</span> work.
-            </li>
-            <li>
-              <span class="highlightSize">Tame, socialise and care</span> for
-              rescued cats and kittens, and find them secure, loving, forever
-              homes which have been vetted by experienced PCR volunteers.
-            </li>
-            <li>
-              <span class="highlightSize">Provide information</span> and educate
-              the public about the welfare and care of both domestic and
-              community cats.
-            </li>
-            <li>
-              <span class="highlightSize">Support</span> existing and potential
-              cat owners by providing information and advice on a range of cat
-              behavioural issues.
-            </li>
-            <li>
-              <span class="highlightSize">Follow</span> best practice in
-              <span class="highlightSize">animal rescue</span> and to train
-              volunteers to assist our cat welfare and
-              <span class="highlightSize">rescue work.</span>
-            </li>
-            <li>
-              <span class="highlightSize">Advocate</span> for better animal
-              welfare legislation, especially for cats, and for enforcement of
-              existing legislation.
-            </li>
-            <li>
-              Set up
-              <span class="highlightSize">fostering programmes</span> with
-              vulnerable groups (the elderly, young people in care, individuals
-              with intellectual and/or physical disabilities, individuals with
-              mental ill health, offenders on parole, etc).
-            </li>
-            <li>
-              <span class="highlightSize">Demonstrate</span> that by caring for
-              cats we learn to care better for ourselves.
-            </li>
-            <li>
-              <span class="highlightSize">Promote</span> that all life should be
-              treated with respect, compassion and empathy.
-            </li>
-            <li>
-              Be <span class="highlightSize">open and transparent</span> in the
-              work we do.
-            </li>
-          </ol>
+          <figure class="mainContent">
+            <figcaption id="figTeam2">
+              We offer <span class="highlightSize">work placements</span> on the
+              <span class="highlightSize">Tús DSP initiative</span> program. We
+              can also offer (<span class="highlightSize">admin only</span>)
+              work placements for students on
+              <span class="highlightSize">FETAC Level 5 Animal Care</span>
+              Courses.
+            </figcaption>
+            <img
+              class="figurePics"
+              id="teamPic2"
+              src="resources/images/team3.png"
+            />
+          </figure>
+
+          <p class="paraBorder" id="margin0top">
+            You are welcome to volunteer with us on
+            <span class="highlightSize">one-off projects</span> <br />or commit
+            to an agreed time
+            <span class="highlightSize">each week/month.</span>
+          </p>
           <div class="slider">
             <div class="slides">
               <input type="radio" name="radio-btn" id="radio1" />
@@ -575,77 +732,13 @@
               ><label for="radio5" class="manual-btn"></label>
             </div>
           </div>
-          <p class="paraBorder">
-            Since forming in August 2014, we have
-            <span class="highlightSize">TNR’d</span> over
-            <span class="highlightSize">1500</span> feral cats and we have
-            rescued, tamed and found loving forever homes for over
-            <span class="highlightSize">2000</span> cats and kittens.<br /><br />We
-            have provided
-            <span class="highlightSize">veterinary treatment</span> for many
-            more and we have rehomed a number of domestic cats who have been
-            surrendered to us by their humans for a variety of reasons.<br /><br />Our
-            partner vets tell us they have seen a dramatic
-            <span class="highlightSize">reduction</span> in the number of
-            homeless cats and unwanted kittens since we started our work.
-          </p>
-
-          <figure class="mainContent">
-            <img
-              class="figurePics, cat5"
-              id="padding0"
-              alt="Picture of the Cat"
-              title="Cat"
-              src="resources/images/pngaaa.com-451220.png"
-            />
-            <figcaption>
-              We run
-              <span class="highlightSize">cat welfare awareness events</span> in
-              various pet stores across Dublin.<br />We also run regular
-              <span class="highlightSize">low cost microchipping days</span> as
-              part of our responsible pet ownership initiative, educational
-              outreach projects, and we are active advocates on behalf of cat
-              welfare in Ireland.
-            </figcaption>
-          </figure>
-          <figure class="mainContent">
-            <figcaption>
-              In addition, we provide
-              <span class="highlightSize">help, advice, and support</span> about
-              cats to many people via our Facebook page and website.<br />We
-              rely on <span class="highlightSize">public donations</span> and
-              our own <span class="highlightSize">fundraising efforts</span> to
-              fund our rescue and educational work.<br />We are a member of
-              <span class="highlightSize">The Wheel</span> and are working with
-              Dublin City Volunteer Centre towards our Investing in Volunteers
-              Quality Standard.
-            </figcaption>
-            <img
-              class="figurePics"
-              id="padding0topBottom"
-              alt="Picture of the Cat"
-              title="Cat"
-              src="resources/images/pngaaa.com-451273.png"
-            />
-          </figure>
-          <p class="paraBorder" id="margin0top">
-            We are in the process of applying for membership of the
-            <span class="highlightSize">Association of Dogs and Cats Homes</span
-            >.<br /><br />We successfully applied for charitable status with the
-            <span class="highlightSize">Charities Regulatory Authority</span> in
-            2016 (our registered charity number is
-            <span class="highlightSize">20105297</span>).<br /><br />
-            We also received our <span class="highlightSize"></span>tax
-            exemption number (<span class="highlightSize">CHY 21973</span>) from
-            Revenue in 2017.<br /><br />
-            We hope you will help us by
-            <span class="highlightSize">adopting</span>,
-            <span class="highlightSize">volunteering</span> and/or
-            <span class="highlightSize">donating</span>!
-          </p>
+          <h2 class="endHeading">
+            Let’s chat and we can work out what <u>suits</u> <u>you</u> best.
+          </h2>
         </article>
       </section>
     </main>
+
     <footer>
       <h1 class="heading">Visit our social media for daily updates:</h1>
       <article id="footerSocialsContainer">
@@ -659,7 +752,9 @@
         ></a>
       </article>
       <p>
-        Registered Charity Number: 20105297<br />Phibsboro Cat Rescue &copy;2021<br>Website created by POD NUMBER 4<br>Cenit College / FIT project 2021
+        Registered Charity Number: 20105297<br />Phibsboro Cat Rescue
+        &copy;2021<br />Website created by POD NUMBER 4<br />Cenit College / FIT
+        project 2021
       </p>
     </footer>
     <script
