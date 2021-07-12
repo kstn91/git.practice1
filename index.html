@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,600;1,200;1,300&display=swap"
       rel="stylesheet"
     />
-    <title>Phibsboro Cat Rescue - Homepage</title>
+    <title>Homepage - Phibsboro Cat Rescue</title>
     <style>
       /***************************
       ********** MAIN ***********
@@ -138,26 +138,24 @@
       /* MAIN - MEDIA - TABLET */
 
       @media only screen and (max-width: 1300px) {
-
         #mainList {
-        width: 50rem;
-      }
+          width: 50rem;
+        }
 
-      #padding0topBottom {
-        width: 25rem;
-        padding: 4rem 4rem 0rem 0rem;
-      }
+        #padding0topBottom {
+          width: 25rem;
+          padding: 4rem 4rem 0rem 0rem;
+        }
 
-      .cat5 {
-        width: 20rem;
-        padding: 0rem 1rem;
-      }
+        .cat5 {
+          width: 20rem;
+          padding: 0rem 1rem;
+        }
 
-      #padding0left {
-        width: 30rem;
-        padding: 0rem 8rem 0rem 0rem;
-      }
-
+        #padding0left {
+          width: 30rem;
+          padding: 0rem 8rem 0rem 0rem;
+        }
       }
 
       /* MAIN - MEDIA - PHONE */
@@ -234,7 +232,6 @@
           padding: 0;
           margin: 0 auto;
         }
-
       }
 
       /* SLIDER GALLERY CSS */
@@ -404,13 +401,7 @@
       <nav id="mainNav">
         <ul>
           <li>
-            <a href="contact.html" target="_blank">Contact</a>
-          </li>
-          <li>
             <a href="dontate.html" target="_blank">Donate</a>
-          </li>
-          <li>
-            <a href="adoption.html" target="_blank">Adopt</a>
           </li>
           <li>
             <a href="tnr.html" target="_blank">TNR</a>
@@ -419,7 +410,7 @@
             <a href="volunteer.html" target="_blank">Volunteer</a>
           </li>
           <li>
-            <a href="thepurr.html" target="_blank">The Purr</a>
+            <a href="contact.html" target="_blank">Contact</a>
           </li>
         </ul>
       </nav>
@@ -659,7 +650,9 @@
         ></a>
       </article>
       <p>
-        Registered Charity Number: 20105297<br />Phibsboro Cat Rescue &copy;2021<br>Website created by POD NUMBER 4<br>Cenit College / FIT project 2021
+        Registered Charity Number: 20105297<br />Phibsboro Cat Rescue
+        &copy;2021<br />Website created by POD NUMBER 4<br />Cenit College / FIT
+        project 2021
       </p>
     </footer>
     <script
@@ -673,9 +666,6 @@
         var mainNav = document.getElementById("mainNav");
         var mainNavComputedStyles = getComputedStyle(mainNav);
         var mainNavDisplay = mainNavComputedStyles.display;
-
-        var button = document.getElementById("burgerMenu");
-        var buttonStyles = button.style.borderRadius;
 
         if (mainNavDisplay == "flex") {
           mainNav.style.display = "none";

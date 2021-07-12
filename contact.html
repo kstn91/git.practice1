@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="resources/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,600;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact - Phibsboro Cat Rescue</title>
+    <style>
+      /***************************
+      ********** MAIN ***********
+      ***************************/
+      main {
+        background-color: #f6fdff;
+        margin: 0;
+      }
+
+      .paraBorder {
+        font-size: 2rem;
+        width: 60rem;
+        padding: 2rem;
+        margin: 2rem auto 0rem auto;
+        border-top: 1rem solid #f5ab0a;
+        border-bottom: 1rem solid #f5ab0a;
+        border-radius: 5rem;
+        text-align: center;
+        color: #f5ab0a;
+      }
+
+      /*Muirinn's Code */
+      #title {
+        text-align: center;
+        font-size: 2.5em;
+      }
+      .emaildiv {
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .formdiv {
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .mapdiv {
+        z-index: -1;
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .addressdiv {
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .socialdiv {
+        z-index: -1;
+      }
+      .biggername {
+        color: #f5ab0a;
+        font-size: 20px;
+      }
+      #map {
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+      }
+      .socialdiv {
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .headingC {
+        font-family: Helvetica;
+        color: #f5ab0a;
+      }
+      input[type="text"],
+      [type="email"] {
+        width: 500px;
+        padding: 15px 20px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 2px solid #f8d56f;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 500px;
+        background-color: #dd2712;
+        color: #f6fdff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 1300px) {
+        .headingC {
+          font-size: 1.8rem;
+        }
+
+        .biggername {
+          font-size: 1.6rem;
+        }
+
+        .emaildiv a {
+          font-size: 1.5rem;
+        }
+
+        .formdiv {
+          font-size: 1.5rem;
+        }
+
+        .addressdiv {
+          font-size: 1.5rem;
+        }
+
+        .mapdiv {
+          width: 80%;
+        }
+
+        .mapdiv h2 {
+          width: 100%;
+          text-align: center;
+        }
+
+        #map {
+          width: 100%;
+        }
+
+        .socialdiv {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      /* MAIN - MEDIA - PHONE */
+
+      @media only screen and (max-width: 767px) {
+        main {
+          margin: 0 auto;
+          padding: 0rem;
+        }
+
+        .paraBorder {
+          font-size: 3.5rem;
+        }
+
+        .headingC {
+          font-size: 3rem;
+        }
+
+        .biggername {
+          font-size: 2.8rem;
+        }
+
+        .emaildiv {
+          width: 100%;
+          text-align: center;
+        }
+
+        .emaildiv a {
+          font-size: 2.8rem;
+          color: black;
+        }
+
+        .formdiv {
+          text-align: center;
+          width: fit-content;
+          font-size: 2.5rem;
+        }
+
+        .mainForm input {
+          width: 60rem;
+        }
+
+        .addressdiv {
+          font-size: 2.8rem;
+        }
+
+        .mapdiv {
+          width: 90%;
+        }
+
+        .mapdiv h2 {
+          width: 100%;
+          text-align: center;
+        }
+
+        #map {
+          width: 100%;
+        }
+
+        .socialdiv {
+          width: 90%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <figure class="container-head">
+        <img
+          id="cat-logo1"
+          src="resources/images/cat1.png"
+          alt="Cat"
+          title="Cat"
+        />
+        <figcaption class="flex-container">
+          <div class="container">
+            <h1>PHIBSBORO CAT RESCUE</h1>
+            <p>Saving The World One Kitty At The Time</p>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="container-img">
+        <img
+          id="cat-logo2"
+          src="resources/images/cat2.png"
+          alt="Picture of the Cat"
+          title="Cat"
+        />
+      </figure>
+      <article class="container" id="socials">
+        <a href="./contact.html" target="_blank"
+          ><i class="fas fa-map-marker-alt"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/pg/phibscatrescue/posts/"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/phibsborocatrescue/" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+      </article>
+    </header>
+    <div id="navContainer">
+      <div
+        id="burgerMenu"
+        title="Show/Hide Navigation Bar"
+        onclick="hideMenu()"
+      >
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li>
+            <a href="index.html" target="_blank">About Us</a>
+          </li>
+          <li>
+            <a href="dontate.html" target="_blank">Donate</a>
+          </li>
+          <li>
+            <a href="tnr.html" target="_blank">TNR</a>
+          </li>
+          <li>
+            <a href="volunteer.html" target="_blank">Volunteer</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--Muirinn's Code Start-->
+    <main>
+      <h1 class="paraBorder">Contact Us</h1>
+
+      <div class="emaildiv">
+        <h2 class="headingC">Emails</h2>
+        <p>
+          <span class="biggername">Information - </span
+          ><a href="mailto:info@phibsborocatrescue.ie"
+            >info@phibsborocatrescue.ie</a
+          ><br />
+          <span class="biggername">Adopt - </span
+          ><a href="mailto:adopt@phibsborocatrescue.ie"
+            >adopt@phibsborocatrescue.ie</a
+          ><br />
+          <span class="biggername">Foster - </span
+          ><a href="mailto:foster@phibsborocatrescue.ie"
+            >foster@phibsborocatrescue.ie</a
+          ><br />
+          <span class="biggername">Rescue - </span
+          ><a href="mailto:rescue@phibsborocatrescue.ie"
+            >rescue@phibsborocatrescue.ie</a
+          ><br />
+          <span class="biggername">TNR - </span
+          ><a href="mailto:tnr@phibsborocatrescue.ie"
+            >tnr@phibsborocatrescue.ie</a
+          ><br />
+          <span class="biggername">Rehome - </span
+          ><a href="mailto:rehome@phibsborocatrescue.ie"
+            >rehome@phibsborocatrescue.ie</a
+          ><br />
+          <span class="biggername">Volunteer - </span
+          ><a href="mailto:volunteer@phibsborocatrescue.ie"
+            >volunteer@phibsborocatrescue.ie</a
+          ><br />
+          <span class="biggername">Donate - </span
+          ><a href="mailto:donate@phibsborocatrescue.ie"
+            >donate@phibsborocatrescue.ie</a
+          ><br />
+          <span class="biggername">Shop - </span
+          ><a href="mailto:shop@phibsborocatrescue.ie"
+            >shop@phibsborocatrescue.ie</a
+          >
+        </p>
+      </div>
+      <div class="formdiv">
+        <h2 class="headingC">Form</h2>
+        <form class="mainForm">
+          <label for="name">Name (Required)</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Email (Required)</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="name">Subject</label><br />
+          <input type="text" id="subject" name="subject" /><br />
+          <label for="name">Message</label><br />
+          <input type="text" id="message" name="message" /><br />
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+      <div class="addressdiv">
+        <h2 class="headingC">Address</h2>
+        <p>
+          The Inner Purr<br />
+          31A Brunswick Street North<br />
+          Smithfield<br />
+          Dublin, D07 RW97
+        </p>
+        <h2 class="headingC">Opening Hours</h2>
+        <table>
+          <tr>
+            <td>Monday</td>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>11am-7pm</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>11am-7pm</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>11am-7pm</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>11am-7pm</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>11am-5pm</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>11am-5pm</td>
+          </tr>
+        </table>
+      </div>
+      <div class="mapdiv">
+        <h2 class="headingC">Map</h2>
+        <iframe
+          id="map"
+          frameborder="0"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAvLv0zDmAfL22sH5yhUR-GgJxuHGYf6sk&q=place_id:ChIJ42MeMywMZ0gR0yXegk_FVXk&zoom=15"
+        >
+        </iframe>
+      </div>
+      <div class="socialdiv">
+        <h2 class="headingC">Facebook</h2>
+        <div id="fb-root"></div>
+        <script
+          async
+          defer
+          crossorigin="anonymous"
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0"
+          nonce="yehAEGZW"
+        ></script>
+        <div
+          class="fb-page"
+          data-href="https://www.facebook.com/phibscatrescue/"
+          data-tabs="timeline"
+          data-width="400"
+          data-height="400"
+          data-small-header="false"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="true"
+        >
+          <blockquote
+            cite="https://www.facebook.com/phibscatrescue/"
+            class="fb-xfbml-parse-ignore"
+          >
+            <a href="https://www.facebook.com/phibscatrescue/"
+              >Phibsboro Cat Rescue</a
+            >
+          </blockquote>
+        </div>
+      </div>
+    </main>
+    <!--Muirinn's Code End-->
+
+    <footer>
+      <h1 class="heading">Visit our social media for daily updates:</h1>
+      <article id="footerSocialsContainer">
+        <a
+          href="https://www.facebook.com/pg/phibscatrescue/posts/"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/phibsborocatrescue/" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+      </article>
+      <p>
+        Registered Charity Number: 20105297<br />Phibsboro Cat Rescue
+        &copy;2021<br />Website created by POD NUMBER 4<br />Cenit College / FIT
+        project 2021
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/b76166d822.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      ///////////////////////////////////////////////////////////////////
+
+      function hideMenu() {
+        var mainNav = document.getElementById("mainNav");
+        var mainNavComputedStyles = getComputedStyle(mainNav);
+        var mainNavDisplay = mainNavComputedStyles.display;
+
+        var button = document.getElementById("burgerMenu");
+        var buttonStyles = button.style.borderRadius;
+
+        if (mainNavDisplay == "flex") {
+          mainNav.style.display = "none";
+          console.log(buttonStyles);
+        } else {
+          mainNav.style.display = "flex";
+        }
+      }
+
+      ///////////////////////////////////////////////////////////////////
+
+      window.onscroll = function () {
+        stickyNav();
+      };
+
+      ///////////////////////////////////////////////////////////////////
+
+      function stickyNav() {
+        var navbar = document.getElementById("navContainer");
+        var sticky = navbar.offsetTop;
+        if (window.pageYOffset > sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+      ///////////////////////////////////////////////////////////////////
+    </script>
+  </body>
+</html>

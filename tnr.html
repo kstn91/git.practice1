@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="resources/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,600;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trap-Neuter-Release - Phibsboro Cat Rescue</title>
+    <style>
+      /***************************
+      ********** MAIN ***********
+      ***************************/
+
+      main {
+        background-color: #f6fdff;
+        margin: 0;
+      }
+
+      .para1 {
+        font-family: "Spectral", serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 0;
+        padding: 2rem 2rem;
+      }
+
+      .artAboutUs {
+        background-color: #fff8e688;
+        text-align: center;
+      }
+
+      .headingTxt {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-family: "Coustard", serif;
+        font-weight: 900;
+        width: 100%;
+        background-color: #f8d56f;
+      }
+
+      #marginTop0 {
+        margin-top: 0;
+      }
+
+      .mainContent {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mainContent figcaption {
+        width: 40rem;
+        padding: 3rem;
+        border-radius: 10rem;
+        font-size: 1.1rem;
+      }
+
+      .mainContent figcaption a {
+        color: black;
+      }
+
+      .figurePics {
+        width: 35rem;
+        padding: 0rem 5rem;
+      }
+
+      #padding0 {
+        padding: 0rem 0rem 0rem 5rem;
+      }
+
+      #padding0topBottom {
+        padding: 0rem 8rem 0rem 0rem;
+      }
+
+      #padding0left {
+        padding: 0rem 5rem 0rem 0rem;
+      }
+
+      #borderBottom {
+        border-bottom: 1rem solid #f5ab0a;
+        border-radius: 5rem;
+      }
+
+      .highlightSize {
+        font-size: 1.3rem;
+        font-weight: 900;
+        color: #dd2712;
+      }
+
+      #mainList {
+        font-size: 1.3rem;
+        list-style: upper-roman;
+        text-align: left;
+        line-height: 1.6;
+        width: 60rem;
+      }
+
+      #mainList li {
+        padding: 0.5rem;
+        text-align: left;
+        line-height: 1.6;
+      }
+
+      .paraBorder {
+        font-size: 1.3rem;
+        width: 60rem;
+        padding: 2rem;
+        margin: 2rem auto 0rem auto;
+        border-top: 1rem solid #f5ab0a;
+        border-bottom: 1rem solid #f5ab0a;
+        border-radius: 5rem;
+        font-weight: bold;
+      }
+
+      .strong {
+        color: #f5ab0a;
+      }
+
+      #margin0top {
+        margin: 0rem auto 0rem auto;
+      }
+
+      .cat4 {
+        width: 24rem;
+      }
+
+      .cat5 {
+        width: 30rem;
+      }
+
+      /* MAIN - MEDIA - TABLET */
+
+      @media only screen and (max-width: 1300px) {
+        #mainList {
+          width: 50rem;
+        }
+
+        #padding0topBottom {
+          width: 25rem;
+          padding: 4rem 4rem 0rem 0rem;
+        }
+
+        .cat5 {
+          width: 20rem;
+          padding: 0rem 1rem;
+        }
+
+        #padding0left {
+          width: 30rem;
+          padding: 0rem 8rem 0rem 0rem;
+        }
+      }
+
+      /* MAIN - MEDIA - PHONE */
+
+      @media only screen and (max-width: 767px) {
+        main {
+          margin: 0 auto;
+          padding: 0rem;
+        }
+
+        .headingTxt {
+          font-size: 2.5rem;
+        }
+
+        .mainContent {
+          display: block;
+          width: 100%;
+        }
+
+        .mainContent figcaption {
+          width: 100%;
+          padding: 2rem;
+          font-size: 2rem;
+          margin: 0 auto;
+        }
+
+        #padding0left {
+          display: none;
+        }
+
+        #mainList {
+          width: 80%;
+          padding: 0rem 0rem;
+          margin: 0 auto;
+          font-size: 2rem;
+        }
+
+        #mainList li {
+          padding: 1rem;
+        }
+
+        .borderTop {
+          border-top: 1rem solid #f5ab0a;
+        }
+
+        #borderBottom {
+          border: none;
+        }
+
+        .borderFigBottom {
+          border-bottom: 1rem solid #f5ab0a;
+        }
+
+        .cat5 {
+          width: 45%;
+        }
+
+        .highlightSize {
+          font-size: 2.3rem;
+        }
+
+        .paraBorder {
+          font-size: 2rem;
+        }
+
+        #padding0 {
+          margin: 0rem 0rem 0rem 2rem;
+          padding: 0;
+          float: left;
+        }
+
+        #padding0topBottom {
+          width: 30rem;
+          padding: 0;
+          margin: 0 auto;
+        }
+      }
+
+      .volunteerFigure {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .volunteerFigure figcaption {
+        width: 40rem;
+        margin: 0 auto;
+        padding: 2rem 4rem;
+        border-radius: 10rem;
+        font-size: 1.3rem;
+        border-bottom: 1rem solid #f5ab0a;
+        border-left: 1rem solid #f5ab0a;
+        border-right: 1rem solid #f5ab0a;
+      }
+
+      .volunteerFigure figcaption a {
+        color: black;
+      }
+
+      .borderBottomPic {
+        border-bottom: 1rem solid #f5ab0a;
+        border-radius: 5rem;
+      }
+
+      .teamPic1 {
+        width: 50rem;
+        padding: 2rem 5rem 0rem 5rem;
+      }
+
+      #volunteerList {
+        font-size: 1.3rem;
+        margin: 0rem 0rem 0rem auto;
+        padding: 0rem;
+        width: 15rem;
+        list-style: upper-roman;
+      }
+
+      #volunteerList li {
+        padding: 0.5rem;
+        text-align: left;
+      }
+
+      .red {
+        color: #dd2712;
+        font-size: 1.35rem;
+        font-weight: 900;
+      }
+
+      #catsVolunteer {
+        width: 50rem;
+        padding: 0rem 1rem;
+        margin: 0rem auto 0rem 0rem;
+      }
+
+      #catDown {
+        width: 20rem;
+        padding: 0rem 0rem 0rem 3rem;
+        margin: 0;
+      }
+
+      #teamPic2 {
+        padding: 0rem 6rem 0rem 0rem;
+        margin: 0;
+      }
+
+      #figTeam2 {
+        width: 35rem;
+        padding-left: 5rem;
+      }
+
+      .endHeading {
+        font-size: 2rem;
+        padding: 0rem 4rem 2rem 4rem;
+        margin: 0 auto;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <figure class="container-head">
+        <img
+          id="cat-logo1"
+          src="resources/images/cat1.png"
+          alt="Cat"
+          title="Cat"
+        />
+        <figcaption class="flex-container">
+          <div class="container">
+            <h1>PHIBSBORO CAT RESCUE</h1>
+            <p>Saving The World One Kitty At The Time</p>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="container-img">
+        <img
+          id="cat-logo2"
+          src="resources/images/cat2.png"
+          alt="Picture of the Cat"
+          title="Cat"
+        />
+      </figure>
+      <article class="container" id="socials">
+        <a href="./contact.html" target="_blank"
+          ><i class="fas fa-map-marker-alt"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/pg/phibscatrescue/posts/"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/phibsborocatrescue/" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+      </article>
+    </header>
+    <div id="navContainer">
+      <div
+        id="burgerMenu"
+        title="Show/Hide Navigation Bar"
+        onclick="hideMenu()"
+      >
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li>
+            <a href="index.html" target="_blank">About us</a>
+          </li>
+          <li>
+            <a href="contact.html" target="_blank">Contact</a>
+          </li>
+          <li>
+            <a href="dontate.html" target="_blank">Donate</a>
+          </li>
+          <li>
+            <a href="volunteer.html" target="_blank">Volunteer</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <section id="sectionMainOne">
+        <article class="artAboutUs">
+          <h1 class="headingTxt" id="marginTop0">Trap - Neuter - Release</h1>
+
+          <p class="paraBorder">What is Trap - Neuter - Release (TNR)?</p>
+
+          <figure class="mainContent">
+            <figcaption id="mainList">
+              Trap-Neuter-Release (also known as TNR) programmes are the only
+              proven, humane way of controlling wild (sometimes called feral,
+              community or free-roaming) cat populations.<br /><br />
+              <span class="strong">Trap:</span> Wild cats are humanely trapped
+              in special traps.<br /><br />
+              <span class="strong">Neuter:</span> Then the cats are then taken
+              to a veterinary clinic to be healthchecked (and given medical
+              treatment, if required), neutered/ spayed, and eartipped.<br /><br />
+              An eartip is where the tip of the cat’s left ear is removed under
+              anaesthetic while he is being neutered/ she is being spayed. The
+              operation does not cause any distress to the cat and does not
+              impede his/ her natural activities in any way. <br /><br />An
+              eartip is a universal sign that a cat has been neutered/
+              spayed.<br /><br />
+
+              <span class="strong">Release:</span> Once the cat has fully
+              recovered (often later the same day), s/he is released back to
+              his/ her home to live out his/ her natural life.
+            </figcaption>
+          </figure>
+
+          <p class="paraBorder" id="margin0top">Why TNR?</p>
+          <figure class="mainContent">
+            <figcaption id="mainList">
+              TNR programmes improve the often fraught relationship between wild
+              cats and humans in our shared environment, especially in our
+              crowded cities.<br /><br />
+              <span class="strong">Breaks the breeding cycle:</span> It is
+              estimated that a queen (an unspayed female) can produce 420,000
+              kittens (her kittens have kittens, who have kittens, who have
+              kittens, and on and on) in only 7 years, which is the average
+              feral breeding lifespan. Many of these kittens will die of
+              starvation, disease, and/ or human cruelty.<br /><br />
+              <span class="strong"
+                >Improves the quality of life of the wild cats:</span
+              >
+              Neutering/ spaying prevents testicular tumours, uterine cancer and
+              uterine infections. The risk of spayed females developing breast
+              cancer is seven times lower than the risk for unspayed females.
+              Neutered males are much less likely to get into fights and are
+              therefore less likely to suffer from injuries. They also tend not
+              to roam as they do not need to search for females to mate with and
+              so are less likely to be involved in accidents. Spayed females
+              suffer far less anxiety than their unspayed sisters.<br /><br />
+              <span class="strong"
+                >Reduces human complaints about wild cats:</span
+              >
+              Neutered males do not spray, their urine doesn’t smell, and they
+              don’t fight other neutered males so they will not disturb a
+              neighbourhood at night. Spayed females will not howl incessantly
+              for mates during mating season.
+            </figcaption>
+          </figure>
+
+          <p class="paraBorder" id="margin0top">How to TNR?</p>
+          <figure class="mainContent">
+            <figcaption id="mainList">
+              Please <a href="contact.html">contact us</a> if you are interested
+              in starting a TNR programme in your neighbourhood. <br /><br />
+              Useful link:
+              <a href="www.alleycat.org" target="_blank">www.alleycat.org</a>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <h1 class="heading">Visit our social media for daily updates:</h1>
+      <article id="footerSocialsContainer">
+        <a
+          href="https://www.facebook.com/pg/phibscatrescue/posts/"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/phibsborocatrescue/" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+      </article>
+      <p>
+        Registered Charity Number: 20105297<br />Phibsboro Cat Rescue
+        &copy;2021<br />Website created by POD NUMBER 4<br />Cenit College / FIT
+        project 2021
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/b76166d822.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      ///////////////////////////////////////////////////////////////////
+
+      function hideMenu() {
+        var mainNav = document.getElementById("mainNav");
+        var mainNavComputedStyles = getComputedStyle(mainNav);
+        var mainNavDisplay = mainNavComputedStyles.display;
+
+        if (mainNavDisplay == "flex") {
+          mainNav.style.display = "none";
+          console.log(buttonStyles);
+        } else {
+          mainNav.style.display = "flex";
+        }
+      }
+
+      ///////////////////////////////////////////////////////////////////
+
+      window.onscroll = function () {
+        stickyNav();
+      };
+
+      ///////////////////////////////////////////////////////////////////
+
+      function stickyNav() {
+        var navbar = document.getElementById("navContainer");
+        var sticky = navbar.offsetTop;
+        if (window.pageYOffset > sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+      ///////////////////////////////////////////////////////////////////
+    </script>
+  </body>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="resources/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,600;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Donate - Phibsboro Cat Rescue</title>
+    <style>
+      /***************************
+      ********** MAIN ***********
+      ***************************/
+
+      main {
+        background-color: #f6fdff;
+        margin: 0;
+      }
+
+      .para1 {
+        font-family: "Spectral", serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 0;
+        padding: 2rem 2rem;
+      }
+
+      .artAboutUs {
+        background-color: #fff8e688;
+        text-align: center;
+      }
+
+      .headingTxt {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-family: "Coustard", serif;
+        font-weight: 900;
+        width: 100%;
+        background-color: #f8d56f;
+      }
+
+      #marginTop0 {
+        margin-top: 0;
+      }
+
+      .mainContent {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mainContent figcaption {
+        width: 40rem;
+        padding: 3rem;
+        border-radius: 10rem;
+        font-size: 1.1rem;
+      }
+
+      .mainContent figcaption a {
+        color: black;
+      }
+
+      .figurePics {
+        width: 35rem;
+        padding: 0rem 5rem;
+      }
+
+      #padding0 {
+        padding: 0rem 0rem 0rem 5rem;
+      }
+
+      #padding0topBottom {
+        padding: 0rem 8rem 0rem 0rem;
+      }
+
+      #padding0left {
+        padding: 0rem 5rem 0rem 0rem;
+      }
+
+      #borderBottom {
+        border-bottom: 1rem solid #f5ab0a;
+        border-radius: 5rem;
+      }
+
+      .highlightSize {
+        font-size: 1.3rem;
+        font-weight: 900;
+        color: #dd2712;
+      }
+
+      #mainList {
+        font-size: 1.3rem;
+        list-style: upper-roman;
+        text-align: left;
+        line-height: 1.6;
+        width: 30rem;
+      }
+
+      #mainListLong {
+        font-size: 1.3rem;
+        list-style: upper-roman;
+        text-align: left;
+        line-height: 1.6;
+        width: 60rem;
+      }
+
+      #mainList li {
+        padding: 0.5rem;
+        text-align: left;
+        line-height: 1.6;
+      }
+
+      .paraBorder {
+        font-size: 1.3rem;
+        width: 60rem;
+        padding: 2rem;
+        margin: 2rem auto 0rem auto;
+        border-top: 1rem solid #f5ab0a;
+        border-bottom: 1rem solid #f5ab0a;
+        border-radius: 5rem;
+        font-weight: bold;
+      }
+
+      .strong {
+        color: #f5ab0a;
+      }
+
+      #margin0top {
+        margin: 0rem auto 0rem auto;
+      }
+
+      .cat4 {
+        width: 24rem;
+      }
+
+      .cat5 {
+        width: 30rem;
+      }
+
+      /* MAIN - MEDIA - TABLET */
+
+      @media only screen and (max-width: 1300px) {
+        #mainList {
+          width: 50rem;
+        }
+
+        #mainListLong {
+          width: 50rem;
+        }
+
+        #padding0topBottom {
+          width: 25rem;
+          padding: 4rem 4rem 0rem 0rem;
+        }
+
+        .cat5 {
+          width: 20rem;
+          padding: 0rem 1rem;
+        }
+
+        #padding0left {
+          width: 30rem;
+          padding: 0rem 8rem 0rem 0rem;
+        }
+      }
+
+      /* MAIN - MEDIA - PHONE */
+
+      @media only screen and (max-width: 767px) {
+        main {
+          margin: 0 auto;
+          padding: 0rem;
+        }
+
+        .headingTxt {
+          font-size: 2.5rem;
+        }
+
+        .mainContent {
+          display: block;
+          width: 100%;
+        }
+
+        .mainContent figcaption {
+          width: 100%;
+          padding: 2rem;
+          font-size: 2rem;
+          margin: 0 auto;
+        }
+
+        #padding0left {
+          display: none;
+        }
+
+        #mainList {
+          width: 80%;
+          padding: 0rem 0rem;
+          margin: 0 auto;
+          font-size: 2rem;
+        }
+
+        #mainListLong {
+          width: 80%;
+          padding: 0rem 0rem;
+          margin: 0 auto;
+          font-size: 2rem;
+        }
+
+        #mainList li {
+          padding: 1rem;
+        }
+
+        .borderTop {
+          border-top: 1rem solid #f5ab0a;
+        }
+
+        #borderBottom {
+          border: none;
+        }
+
+        .borderFigBottom {
+          border-bottom: 1rem solid #f5ab0a;
+        }
+
+        .cat5 {
+          width: 45%;
+        }
+
+        .highlightSize {
+          font-size: 2.3rem;
+        }
+
+        .paraBorder {
+          font-size: 2rem;
+        }
+
+        #padding0 {
+          margin: 0rem 0rem 0rem 2rem;
+          padding: 0;
+          float: left;
+        }
+
+        #padding0topBottom {
+          width: 30rem;
+          padding: 0;
+          margin: 0 auto;
+        }
+      }
+
+      .volunteerFigure {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .volunteerFigure figcaption {
+        width: 40rem;
+        margin: 0 auto;
+        padding: 2rem 4rem;
+        border-radius: 10rem;
+        font-size: 1.3rem;
+        border-bottom: 1rem solid #f5ab0a;
+        border-left: 1rem solid #f5ab0a;
+        border-right: 1rem solid #f5ab0a;
+      }
+
+      .volunteerFigure figcaption a {
+        color: black;
+      }
+
+      .borderBottomPic {
+        border-bottom: 1rem solid #f5ab0a;
+        border-radius: 5rem;
+      }
+
+      .teamPic1 {
+        width: 50rem;
+        padding: 2rem 5rem 0rem 5rem;
+      }
+
+      #volunteerList {
+        font-size: 1.3rem;
+        margin: 0rem 0rem 0rem auto;
+        padding: 0rem;
+        width: 15rem;
+        list-style: upper-roman;
+      }
+
+      #volunteerList li {
+        padding: 0.5rem;
+        text-align: left;
+      }
+
+      .red {
+        color: #dd2712;
+        font-size: 1.35rem;
+        font-weight: 900;
+      }
+
+      #catsVolunteer {
+        width: 50rem;
+        padding: 0rem 1rem;
+        margin: 0rem auto 0rem 0rem;
+      }
+
+      #catDown {
+        width: 20rem;
+        padding: 0rem 0rem 0rem 3rem;
+        margin: 0;
+      }
+
+      #teamPic2 {
+        padding: 0rem 6rem 0rem 0rem;
+        margin: 0;
+      }
+
+      #figTeam2 {
+        width: 35rem;
+        padding-left: 5rem;
+      }
+
+      .endHeading {
+        font-size: 2rem;
+        padding: 0rem 4rem 2rem 4rem;
+        margin: 0 auto;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <figure class="container-head">
+        <img
+          id="cat-logo1"
+          src="resources/images/cat1.png"
+          alt="Cat"
+          title="Cat"
+        />
+        <figcaption class="flex-container">
+          <div class="container">
+            <h1>PHIBSBORO CAT RESCUE</h1>
+            <p>Saving The World One Kitty At The Time</p>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="container-img">
+        <img
+          id="cat-logo2"
+          src="resources/images/cat2.png"
+          alt="Picture of the Cat"
+          title="Cat"
+        />
+      </figure>
+      <article class="container" id="socials">
+        <a href="./contact.html" target="_blank"
+          ><i class="fas fa-map-marker-alt"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/pg/phibscatrescue/posts/"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/phibsborocatrescue/" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+      </article>
+    </header>
+    <div id="navContainer">
+      <div
+        id="burgerMenu"
+        title="Show/Hide Navigation Bar"
+        onclick="hideMenu()"
+      >
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li>
+            <a href="contact.html" target="_blank">Contact</a>
+          </li>
+          <li>
+            <a href="donate.html" target="_blank">Donate</a>
+          </li>
+          <li>
+            <a href="adoption.html" target="_blank">Adopt</a>
+          </li>
+          <li>
+            <a href="tnr.html" target="_blank">TNR</a>
+          </li>
+          <li>
+            <a href="volunteer.html" target="_blank">Volunteer</a>
+          </li>
+          <li>
+            <a href="thepurr.html" target="_blank">The Purr</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <section id="sectionMainOne">
+        <article class="artAboutUs">
+          <h1 class="headingTxt" id="marginTop0">Donate</h1>
+
+          <p class="paraBorder">We Need Your Support !</p>
+
+          <figure class="mainContent">
+            <figcaption id="mainList">
+              We rely on your generous support to continue and expand our rescue
+              work… every cent/ item you donate goes directly to helping as many
+              homeless, stray, and feral cats and kittens as we possibly can.<br /><br />
+
+              You can donate by using the Donate button:<br /><br />
+
+              <center>
+                <a
+                  href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=D8Y98X69KN4QC&amp;source=url"
+                  ><input
+                    title="PayPal - The safer, easier way to pay online!"
+                    alt="Donate with PayPal button"
+                    name="submit"
+                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                    type="image" /><img
+                    loading="lazy"
+                    src="https://www.paypal.com/en_IE/i/scr/pixel.gif"
+                    alt=""
+                    width="1"
+                    height="1"
+                    border="0"
+                /></a>
+              </center>
+              <br />
+
+              Phibsboro Cat Rescue is an Approved Body under Revenue’s
+              Charitable Donation Scheme.
+            </figcaption>
+            <img
+              class="figurePics"
+              id="padding0left"
+              alt="Picture of the Cat"
+              title="Cat"
+              src="resources/images/lion-adult-cat.png"
+            />
+          </figure>
+
+          <p class="paraBorder" id="margin0top">
+            Kitty Angels - Regular Monthly Payments
+          </p>
+          <figure class="mainContent">
+            <figcaption id="mainListLong">
+              Would you like to support us by making a regular monthly payment?
+              Why not become one of our Kitty Angels by setting up a Standing
+              Order directly to us every month? Once set up, you don’t need to
+              do anything except sit back, relax, and read our updates about all
+              the cats and kittens your generosity have helped. We will also
+              thank you on our Facebook page at the end of every month (unless
+              you ask to remain anonymous).<br /><br />
+
+              The drop-down menu below allows you to choose which Kitty Angel
+              you would like to be!<br /><br />
+
+              Monthly Kitty Angel Subscription:<br /><br />
+
+              <select name="os0">
+                <option value="Moggie">
+                  Moggie : €10.00 EUR &#8211; monthly
+                </option>
+                <option value="Kitten">
+                  Kitten : €5.00 EUR &#8211; monthly
+                </option>
+                <option value="Panther">
+                  Panther : €20.00 EUR &#8211; monthly
+                </option>
+                <option value="Tiger">
+                  Tiger : €50.00 EUR &#8211; monthly
+                </option>
+                <option value="Lion">Lion : €100.00 EUR &#8211; monthly</option>
+              </select>
+              <p>
+                <input
+                  name="encrypted"
+                  type="hidden"
+                  value="-----BEGIN PKCS7-----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-----END PKCS7----- "
+                />
+              </p>
+              <p>
+                <input
+                  alt="PayPal - The safer, easier way to pay online!"
+                  name="submit"
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif"
+                  type="image"
+                />
+              </p>
+            </figcaption>
+          </figure>
+
+          <p class="paraBorder" id="margin0top">Other Ways to Donate</p>
+          <figure class="mainContent">
+            <figcaption id="mainListLong">
+              <strong>Paypal:</strong><br />
+              PhibsCatRescue@gmail.com<br /><br />
+
+              <strong>By bank transfer:</strong><br />
+              BIC: IPBSIE2D<br />
+              IBAN: IE33 IPBS 9906 0324 6697 99<br /><br />
+
+              <strong>Directly to Raheny Vet</strong> 01 847 8044 using your
+              debit or credit card.<br />
+              (Please be sure to say it is for Phibsboro Cat Rescue and maybe
+              drop us a line so we know to look out for your kind donation).<br /><br />
+
+              <a
+                href="https://www.idonate.ie/3776_phibsboro-cat-rescue.html"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  src="http://www.idonate.ie/images/tools/donate-securely-idonate.gif"
+                  alt="fundraise on idonate"
+              /></a>
+            </figcaption>
+          </figure>
+
+          <p class="paraBorder" id="margin0top">
+            Employer Matching Donation Scheme
+          </p>
+          <figure class="mainContent">
+            <figcaption id="mainListLong">
+              Another great way to donate is to
+              <strong>join your employer’s matching donation scheme</strong>, if
+              you work for a large company – or maybe you could persuade your
+              employer to set up a matching donations scheme? It’s an easy way
+              for your employer to show commitment to its corporate social
+              responsibility. Phibsboro Cat Rescue is registered as an approved
+              charity for these schemes.
+            </figcaption>
+          </figure>
+
+          <p class="paraBorder" id="margin0top">Wish List</p>
+          <figure class="mainContent">
+            <figcaption id="mainListLong">
+              You may prefer to help us by donating specific items from our wish
+              list. In addition to our very active TNR programme, we rescue as
+              many cats and kittens as we can and take them into our foster care
+              to be socialised and tamed so we can find them loving forever
+              homes. We also help dedicated carers feed managed feral colonies.
+              <br /><br /><strong>
+                Here some of the items we always need:</strong
+              ><br />
+
+              <ul id="myList">
+                <li>Kitten food (wet and dry)</li>
+                <li>Cat food (wet and dry) for cats of all ages</li>
+                <li>Kitten milk</li>
+                <li>Kitten milk formula (Royal Canin or Cimicat)</li>
+                <li>Cat/ kitten food and water bowls</li>
+                <li>Cat litter</li>
+                <li>Cat litter trays</li>
+                <li>Poo scoops</li>
+                <li>Puppy training pads</li>
+                <li>Cat carriers (all sizes and styles)</li>
+                <li>Cat beds and bedding</li>
+                <li>Cat treats</li>
+                <li>Kitten toys</li>
+                <li>Scratching posts</li>
+                <li>Cat Heat Pads (all sizes)</li>
+                <li>Clean washcloths and dish towels</li>
+                <li>Clean blankets and towels (all sizes)</li>
+                <li>Laundry detergent (non animal tested, such as Astonish)</li>
+                <li>Latex disposable gloves</li>
+              </ul>
+              <br />
+              Pet Connection, a fabulous family run pet store, has also kindly
+              set up a wish list for us – and they cover the delivery costs!
+              Just click on to their website
+              <a href="www.petconnection.ie" target="_blank"
+                >www.petconnection.ie</a
+              >
+              for more details.
+            </figcaption>
+          </figure>
+          <h2 class="endHeading">Thank you for your support!</h2>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <h1 class="heading">Visit our social media for daily updates:</h1>
+      <article id="footerSocialsContainer">
+        <a
+          href="https://www.facebook.com/pg/phibscatrescue/posts/"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/phibsborocatrescue/" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+      </article>
+      <p>
+        Registered Charity Number: 20105297<br />Phibsboro Cat Rescue
+        &copy;2021<br />Website created by POD NUMBER 4<br />Cenit College / FIT
+        project 2021
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/b76166d822.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      ///////////////////////////////////////////////////////////////////
+
+      function hideMenu() {
+        var mainNav = document.getElementById("mainNav");
+        var mainNavComputedStyles = getComputedStyle(mainNav);
+        var mainNavDisplay = mainNavComputedStyles.display;
+
+        if (mainNavDisplay == "flex") {
+          mainNav.style.display = "none";
+          console.log(buttonStyles);
+        } else {
+          mainNav.style.display = "flex";
+        }
+      }
+
+      ///////////////////////////////////////////////////////////////////
+
+      window.onscroll = function () {
+        stickyNav();
+      };
+
+      ///////////////////////////////////////////////////////////////////
+
+      function stickyNav() {
+        var navbar = document.getElementById("navContainer");
+        var sticky = navbar.offsetTop;
+        if (window.pageYOffset > sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+      ///////////////////////////////////////////////////////////////////
+    </script>
+  </body>
+</html>
